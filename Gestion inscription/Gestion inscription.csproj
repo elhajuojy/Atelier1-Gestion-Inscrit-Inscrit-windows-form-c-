@@ -59,6 +59,12 @@
     <Compile Include="GestionInscrit.Designer.cs">
       <DependentUpon>GestionInscrit.cs</DependentUpon>
     </Compile>
+    <Compile Include="gestion_Utilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_Utilisateur.Designer.cs">
+      <DependentUpon>gestion_Utilisateur.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionInscrit.resx">
       <DependentUpon>GestionInscrit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion_Utilisateur.resx">
+      <DependentUpon>gestion_Utilisateur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -309,6 +318,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Youtube_loading_symbol_1_%28wobbly%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\99f7de01-cff7-4d6c-a908-ac84e21833b0-Ruler-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

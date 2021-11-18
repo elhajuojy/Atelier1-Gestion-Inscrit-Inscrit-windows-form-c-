@@ -54,5 +54,17 @@ namespace Gestion_inscription
         {
 
         }
+
+        private void gestionUtilisateurToolStrip_Click(object sender, EventArgs e)
+        {
+
+            gestion_Utilisateur geform = new gestion_Utilisateur();
+            geform.MdiParent = this;
+            geform.Show();
+            // fill mdiParent with connexion form 
+            geform.Dock = DockStyle.Fill;
+            // mdi parent object
+            mdiobject = this;
+        }
     }
 }

@@ -118,223 +118,226 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btAjouter22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btAjouter22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btAjouter32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btAjouter32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btApercu22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btApercu22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btApercu32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btApercu32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btEnregistrer22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btEnregistrer22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btEnregistrer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btEnregistrer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btFermer22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btFermer22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-eye1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-eye1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btFermer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btFermer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btFiltre22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btFiltre22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btFiltre32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btFiltre32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btFlecheBas32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btFlecheBas32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btFlecheHaut32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btFlecheHaut32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-module-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-module-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btImprimer22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btImprimer22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btImprimer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btImprimer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btInfo32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btInfo32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btModifier22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btModifier22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btModifier32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btModifier32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btRepertoireA22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btRepertoireA22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btRepertoireA32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btRepertoireA32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btRepertoireB22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btRepertoireB22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btRepertoireB32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btRepertoireB32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btRetour22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btRetour22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btRetour32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btRetour32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btSupprimer22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btSupprimer22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btFiltre22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btFiltre22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btSupprimer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btSupprimer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Filliere" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Filliere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Inscrit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Inscrit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo_ofppt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_ofppt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Module" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Module.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="note" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\note.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="11548b1e-c77a-431e-be6d-37a541062ead-Creativeworkplace" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\11548b1e-c77a-431e-be6d-37a541062ead-Creativeworkplace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="25497 [Converted]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\25497 [Converted].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4907157" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4907157.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btModifier22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btModifier22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ashley-whitlatch-36aGnv29Ss0-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ashley-whitlatch-36aGnv29Ss0-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avatardefault_92824 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avatardefault_92824 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bee-Hollow-Farm-beekeeping-classes-and-events-near-Schodack-" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bee-Hollow-Farm-beekeeping-classes-and-events-near-Schodack-.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="border" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\border.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="delete-svgrepo-com.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete-svgrepo-com.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eye_icon-icons.com_70156" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye_icon-icons.com_70156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="facebook_logo_icon_147291" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\facebook_logo_icon_147291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="facebook_logo_icon_1472911" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\facebook_logo_icon_1472911.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="goodnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\goodnight.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="google_icon-icons.com_62736" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\google_icon-icons.com_62736.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-eye1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-eye-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-eye-241" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye-241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-folder-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-folder-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-module-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-module-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-module-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-module-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-note-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-note-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="identification-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\identification-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Loading Buffering GIF - Loading Buffering In Progress - Discover &amp; Share GIFs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Loading Buffering GIF - Loading Buffering In Progress - Discover &amp; Share GIFs.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Loading-Buffering-GIF---Loading-Buffering-In-Progress---Discover-&amp;-Share-GIFs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Loading-Buffering-GIF---Loading-Buffering-In-Progress---Discover-&amp;-Share-GIFs.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loading-icon-animated-gif-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading-icon-animated-gif-21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="loading-icon-animated-gif-211" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loading-icon-animated-gif-211.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo_ofppt back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_ofppt back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Inscrit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inscrit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo_ofppt back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_ofppt back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Filliere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Filliere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btImprimer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btImprimer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PikPng.com_profile-icon-png_805068" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PikPng.com_profile-icon-png_805068.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PikPng.com_profile-icon-png_8050681" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PikPng.com_profile-icon-png_8050681.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PikPng.com_profile-icon-png_80506811" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PikPng.com_profile-icon-png_80506811.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plus (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btFiltre32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btFiltre32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="remove1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remove1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btSupprimer22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btSupprimer22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btModifier32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btModifier32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_ofppt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_ofppt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btRetour22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btRetour22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="facebook_logo_icon_1472911" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook_logo_icon_1472911.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goodnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goodnight.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Loading-Buffering-GIF---Loading-Buffering-In-Progress---Discover-&amp;-Share-GIFs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Loading-Buffering-GIF---Loading-Buffering-In-Progress---Discover-&amp;-Share-GIFs.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="facebook_logo_icon_147291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook_logo_icon_147291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-module-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-module-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_ofppt back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_ofppt back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btApercu22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btApercu22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btEnregistrer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btEnregistrer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-eye.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btAjouter22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btAjouter22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-note-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-note-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btFlecheHaut32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btFlecheHaut32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PikPng.com_profile-icon-png_805068" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PikPng.com_profile-icon-png_805068.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btRetour32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btRetour32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PikPng.com_profile-icon-png_8050681" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PikPng.com_profile-icon-png_8050681.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-svgrepo-com.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-svgrepo-com.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btApercu32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btApercu32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="border" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\border.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btEnregistrer22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btEnregistrer22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Module" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Module.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bee-Hollow-Farm-beekeeping-classes-and-events-near-Schodack-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bee-Hollow-Farm-beekeeping-classes-and-events-near-Schodack-.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading-icon-animated-gif-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading-icon-animated-gif-21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="google_icon-icons.com_62736" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\google_icon-icons.com_62736.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btRepertoireA32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btRepertoireA32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PikPng.com_profile-icon-png_80506811" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PikPng.com_profile-icon-png_80506811.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-folder-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-folder-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_ofppt back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_ofppt back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btFlecheBas32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btFlecheBas32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11548b1e-c77a-431e-be6d-37a541062ead-Creativeworkplace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11548b1e-c77a-431e-be6d-37a541062ead-Creativeworkplace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="edit (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btRepertoireB22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btRepertoireB22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="25497 [Converted]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\25497 [Converted].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-eye-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-eye-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btRepertoireA22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btRepertoireA22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btAjouter32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btAjouter32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btFermer22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btFermer22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="identification-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\identification-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4907157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4907157.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btRepertoireB32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btRepertoireB32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Youtube_loading_symbol_1_(wobbly)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Youtube_loading_symbol_1_(wobbly).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="note" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\note.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Loading Buffering GIF - Loading Buffering In Progress - Discover &amp; Share GIFs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Loading Buffering GIF - Loading Buffering In Progress - Discover &amp; Share GIFs.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btInfo32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btInfo32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avatardefault_92824 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatardefault_92824 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye_icon-icons.com_70156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye_icon-icons.com_70156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-eye-241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-eye-241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="99f7de01-cff7-4d6c-a908-ac84e21833b0-Ruler-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\99f7de01-cff7-4d6c-a908-ac84e21833b0-Ruler-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

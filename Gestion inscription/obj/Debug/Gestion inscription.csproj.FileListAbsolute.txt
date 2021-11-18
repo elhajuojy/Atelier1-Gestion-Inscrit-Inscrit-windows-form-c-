@@ -9,3 +9,4 @@ C:\Users\pc\Desktop\Atelier1\Gestion inscription\bin\Debug\Gestion inscription.p
 C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion inscription.exe
 C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion inscription.pdb
 C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion_inscription.FormLogin.resources
+C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion_inscription.gestion_Utilisateur.resources

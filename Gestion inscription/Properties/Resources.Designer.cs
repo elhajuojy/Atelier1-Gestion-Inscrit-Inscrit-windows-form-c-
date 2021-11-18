@@ -93,6 +93,16 @@ namespace Gestion_inscription.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _99f7de01_cff7_4d6c_a908_ac84e21833b0_Ruler_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("99f7de01-cff7-4d6c-a908-ac84e21833b0-Ruler-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);

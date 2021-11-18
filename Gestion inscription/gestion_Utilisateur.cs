@@ -16,5 +16,42 @@ namespace Gestion_inscription
         {
             InitializeComponent();
         }
+
+        private void gestion_Utilisateur_Load(object sender, EventArgs e)
+        {
+            splitContainer1.Panel1Collapsed = true;
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Recherche_Click(object sender, EventArgs e)
+        {
+            if (splitContainer1.Panel1Collapsed == true)
+            {
+                splitContainer1.Panel1Collapsed = false;
+            }
+            else
+            {
+                splitContainer1.Panel1Collapsed = true;
+            }
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
