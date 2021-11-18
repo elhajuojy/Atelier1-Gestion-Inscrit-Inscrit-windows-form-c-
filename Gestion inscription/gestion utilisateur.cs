@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestion_inscription
 {
-    public partial class gestion_inscrit : Form
+    public partial class gestion_utilisateur : Form
     {
-        public gestion_inscrit()
+        public gestion_utilisateur()
         {
             InitializeComponent();
         }

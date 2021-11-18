@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,14 +47,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionInscrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionInscrit.Designer.cs">
+      <DependentUpon>GestionInscrit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionInscrit.resx">
+      <DependentUpon>GestionInscrit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +76,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +90,225 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btAjouter22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btAjouter32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btApercu22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btApercu32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btEnregistrer22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btEnregistrer32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btFermer22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btFermer32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btFiltre22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btFiltre32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btFlecheBas32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btFlecheHaut32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btImprimer22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btImprimer32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btInfo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btModifier22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btModifier32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btRepertoireA22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btRepertoireA32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btRepertoireB22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btRepertoireB32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btRetour22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btRetour32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btSupprimer22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btSupprimer32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filliere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inscrit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_ofppt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Module.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11548b1e-c77a-431e-be6d-37a541062ead-Creativeworkplace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25497 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4907157.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ashley-whitlatch-36aGnv29Ss0-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatardefault_92824 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bee-Hollow-Farm-beekeeping-classes-and-events-near-Schodack-.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-svgrepo-com.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_icon-icons.com_70156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_logo_icon_147291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_logo_icon_1472911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goodnight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google_icon-icons.com_62736.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-folder-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-module-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-module-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-note-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identification-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading Buffering GIF - Loading Buffering In Progress - Discover &amp; Share GIFs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading-Buffering-GIF---Loading-Buffering-In-Progress---Discover-&amp;-Share-GIFs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-icon-animated-gif-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-icon-animated-gif-211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_ofppt back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_ofppt back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PikPng.com_profile-icon-png_805068.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PikPng.com_profile-icon-png_8050681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PikPng.com_profile-icon-png_80506811.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Youtube_loading_symbol_1_%28wobbly%29.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
