@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestion inscription", "Gestion inscription.csproj", "{0A0C15B7-84FB-4BC1-BAE3-7C4E5315AFA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A0C15B7-84FB-4BC1-BAE3-7C4E5315AFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0C15B7-84FB-4BC1-BAE3-7C4E5315AFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0C15B7-84FB-4BC1-BAE3-7C4E5315AFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0C15B7-84FB-4BC1-BAE3-7C4E5315AFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C9C5E17-505E-4F37-ADAD-915A4FB192EB}
+	EndGlobalSection
+EndGlobal
