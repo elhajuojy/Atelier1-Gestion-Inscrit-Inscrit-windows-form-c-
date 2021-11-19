@@ -31,7 +31,7 @@ namespace Gestion_inscription
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.TreeView_utilisateurs = new System.Windows.Forms.TreeView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labellogin = new System.Windows.Forms.Label();
@@ -103,18 +103,20 @@ namespace Gestion_inscription
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer1.Panel2.Controls.Add(this.treeView1);
+            this.splitContainer1.Panel2.Controls.Add(this.TreeView_utilisateurs);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(1233, 625);
             this.splitContainer1.SplitterDistance = 127;
             this.splitContainer1.TabIndex = 1;
             // 
-            // treeView1
+            // TreeView_utilisateurs
             // 
-            this.treeView1.Location = new System.Drawing.Point(12, 15);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(468, 465);
-            this.treeView1.TabIndex = 0;
+            this.TreeView_utilisateurs.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TreeView_utilisateurs.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.TreeView_utilisateurs.Location = new System.Drawing.Point(12, 15);
+            this.TreeView_utilisateurs.Name = "TreeView_utilisateurs";
+            this.TreeView_utilisateurs.Size = new System.Drawing.Size(468, 465);
+            this.TreeView_utilisateurs.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -376,6 +378,7 @@ namespace Gestion_inscription
             this.Modification.Name = "Modification";
             this.Modification.Size = new System.Drawing.Size(50, 57);
             this.Modification.Text = "Modification";
+            this.Modification.Click += new System.EventHandler(this.Modification_Click);
             // 
             // Suppression
             // 
@@ -440,7 +443,7 @@ namespace Gestion_inscription
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView TreeView_utilisateurs;
         private System.Windows.Forms.TextBox textMotePasse;
         private System.Windows.Forms.Label labelpassword;
         private System.Windows.Forms.TextBox textlogin;
