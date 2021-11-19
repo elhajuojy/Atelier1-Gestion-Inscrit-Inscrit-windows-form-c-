@@ -54,7 +54,7 @@ namespace Gestion_inscription
             // 
             this.labelPasswordfalse.AutoSize = true;
             this.labelPasswordfalse.ForeColor = System.Drawing.Color.Red;
-            this.labelPasswordfalse.Location = new System.Drawing.Point(658, 360);
+            this.labelPasswordfalse.Location = new System.Drawing.Point(696, 360);
             this.labelPasswordfalse.Name = "labelPasswordfalse";
             this.labelPasswordfalse.Size = new System.Drawing.Size(0, 17);
             this.labelPasswordfalse.TabIndex = 31;
@@ -110,7 +110,7 @@ namespace Gestion_inscription
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.checkBox1.Location = new System.Drawing.Point(542, 363);
+            this.checkBox1.Location = new System.Drawing.Point(542, 360);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(127, 23);
             this.checkBox1.TabIndex = 26;

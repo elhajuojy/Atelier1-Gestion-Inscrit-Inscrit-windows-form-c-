@@ -46,9 +46,9 @@ namespace Gestion_inscription
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textPrenom = new System.Windows.Forms.TextBox();
+            this.idPrenom = new System.Windows.Forms.TextBox();
             this.labelprenom = new System.Windows.Forms.Label();
-            this.textNom = new System.Windows.Forms.TextBox();
+            this.idNom = new System.Windows.Forms.TextBox();
             this.labelnom = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -256,9 +256,9 @@ namespace Gestion_inscription
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textPrenom);
+            this.groupBox4.Controls.Add(this.idPrenom);
             this.groupBox4.Controls.Add(this.labelprenom);
-            this.groupBox4.Controls.Add(this.textNom);
+            this.groupBox4.Controls.Add(this.idNom);
             this.groupBox4.Controls.Add(this.labelnom);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(15, 333);
@@ -268,13 +268,13 @@ namespace Gestion_inscription
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "identification";
             // 
-            // textPrenom
+            // idPrenom
             // 
-            this.textPrenom.Location = new System.Drawing.Point(188, 63);
-            this.textPrenom.Multiline = true;
-            this.textPrenom.Name = "textPrenom";
-            this.textPrenom.Size = new System.Drawing.Size(214, 32);
-            this.textPrenom.TabIndex = 7;
+            this.idPrenom.Location = new System.Drawing.Point(188, 63);
+            this.idPrenom.Multiline = true;
+            this.idPrenom.Name = "idPrenom";
+            this.idPrenom.Size = new System.Drawing.Size(214, 32);
+            this.idPrenom.TabIndex = 7;
             // 
             // labelprenom
             // 
@@ -285,13 +285,13 @@ namespace Gestion_inscription
             this.labelprenom.TabIndex = 6;
             this.labelprenom.Text = "Prenom";
             // 
-            // textNom
+            // idNom
             // 
-            this.textNom.Location = new System.Drawing.Point(188, 25);
-            this.textNom.Multiline = true;
-            this.textNom.Name = "textNom";
-            this.textNom.Size = new System.Drawing.Size(214, 32);
-            this.textNom.TabIndex = 5;
+            this.idNom.Location = new System.Drawing.Point(188, 25);
+            this.idNom.Multiline = true;
+            this.idNom.Name = "idNom";
+            this.idNom.Size = new System.Drawing.Size(214, 32);
+            this.idNom.TabIndex = 5;
             // 
             // labelnom
             // 
@@ -417,6 +417,7 @@ namespace Gestion_inscription
             this.btnchercher.TabIndex = 3;
             this.btnchercher.Text = "Chercher";
             this.btnchercher.UseVisualStyleBackColor = true;
+            this.btnchercher.Click += new System.EventHandler(this.btnchercher_Click);
             // 
             // gestion_Utilisateur
             // 
@@ -451,7 +452,6 @@ namespace Gestion_inscription
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripBtnAjouter;
         private System.Windows.Forms.ToolStripButton Modification;
         private System.Windows.Forms.ToolStripButton Suppression;
         private System.Windows.Forms.ToolStripButton Recherche;
@@ -468,9 +468,9 @@ namespace Gestion_inscription
         private System.Windows.Forms.RadioButton radioOperat;
         private System.Windows.Forms.RadioButton radioUtilisat;
         private System.Windows.Forms.RadioButton radioAdmin;
-        private System.Windows.Forms.TextBox textPrenom;
+        private System.Windows.Forms.TextBox idPrenom;
         private System.Windows.Forms.Label labelprenom;
-        private System.Windows.Forms.TextBox textNom;
+        private System.Windows.Forms.TextBox idNom;
         private System.Windows.Forms.Label labelnom;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox txtPrenom;
@@ -482,5 +482,6 @@ namespace Gestion_inscription
         private System.Windows.Forms.TextBox txtlogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnchercher;
+        public System.Windows.Forms.ToolStripButton toolStripBtnAjouter;
     }
 }

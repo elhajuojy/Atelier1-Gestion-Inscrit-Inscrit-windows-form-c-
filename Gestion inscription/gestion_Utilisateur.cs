@@ -15,7 +15,10 @@ namespace Gestion_inscription
 {
     public partial class gestion_Utilisateur : Form
     {
+        //create mdiparent object for active toolstrip in connexion form 
+        public static gestion_Utilisateur object_gestionUtilisateur;
         // connection string 
+
         string CnxString = ConfigurationManager.ConnectionStrings["CtnStrinscrits"].ConnectionString;
         public gestion_Utilisateur()
         {
@@ -61,7 +64,7 @@ namespace Gestion_inscription
 
         private void Modification_Click(object sender, EventArgs e)
         {
-
+            TreeView_utilisateurs.Nodes.Clear();
             //CnxString is defined as public 
 
             SqlConnection ctn = new SqlConnection(CnxString);
@@ -132,7 +135,10 @@ namespace Gestion_inscription
             cmd.Parameters.AddWithValue("@login", textloginProfile.Text);
             cmd.Connection = ctn;
             cmd.Parameters.AddWithValue("@pw", textMotePasseProfile.Text);
-            if (radioAdmin.Checked == true)
+
+            if (textloginProfile.Text != string.Empty & textMotePasseProfile.Text!=string.Empty )
+            {
+                if (radioAdmin.Checked == true)
             {
                 cmd.Parameters.AddWithValue("@profile",'a');
                 cmd.Parameters.AddWithValue("@function","Administra");
@@ -149,15 +155,34 @@ namespace Gestion_inscription
                 cmd.Parameters.AddWithValue("@function", "Operat");
             }
 
-            cmd.Parameters.AddWithValue("@nom", textNom.Text);
-            cmd.Parameters.AddWithValue("@prenom", textPrenom.Text);
+            cmd.Parameters.AddWithValue("@nom", idNom.Text);
+            cmd.Parameters.AddWithValue("@prenom", idPrenom.Text);
 
             ctn.Open();
 
             int rowseffected = cmd.ExecuteNonQuery();
-            MessageBox.Show("Rows Effected",rowseffected.ToString());
+            MessageBox.Show(rowseffected.ToString(),"Rows Effected");
 
-            cmd.Connection = ctn;
+                textloginProfile.Text = string.Empty;
+                textMotePasseProfile.Text = string.Empty;
+                idNom.Text = string.Empty;
+                idPrenom.Text = string.Empty;
+                radioAdmin.Checked = false;
+                radioUtilisat.Checked = false;
+                radioOperat.Checked = false;
+            }
+            else
+            {
+                MessageBox.Show("Fill les zone de text ","excpetion");
+            }
+            
+
+            
+        }
+
+        private void btnchercher_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

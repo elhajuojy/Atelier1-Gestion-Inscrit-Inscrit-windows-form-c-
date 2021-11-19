@@ -191,14 +191,14 @@ namespace Gestion_inscription
             // connexionToolStripMenuItem
             // 
             this.connexionToolStripMenuItem.Name = "connexionToolStripMenuItem";
-            this.connexionToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.connexionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.connexionToolStripMenuItem.Text = "Connexion";
             this.connexionToolStripMenuItem.Click += new System.EventHandler(this.connexionToolStripMenuItem_Click);
             // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -266,7 +266,7 @@ namespace Gestion_inscription
             // 
             this.gestionUtilisateurToolStrip.Enabled = false;
             this.gestionUtilisateurToolStrip.Name = "gestionUtilisateurToolStrip";
-            this.gestionUtilisateurToolStrip.Size = new System.Drawing.Size(217, 26);
+            this.gestionUtilisateurToolStrip.Size = new System.Drawing.Size(224, 26);
             this.gestionUtilisateurToolStrip.Text = "Gestion Utilisateur";
             this.gestionUtilisateurToolStrip.Click += new System.EventHandler(this.gestionUtilisateurToolStrip_Click);
             // 
@@ -313,8 +313,6 @@ namespace Gestion_inscription
         private System.Windows.Forms.ToolStripButton btnModules;
         private System.Windows.Forms.ToolStripLabel textModules;
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem connexionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
         public System.Windows.Forms.Label LabelForUpperName;
         public System.Windows.Forms.ToolStripMenuItem inscrptionsToolStrip;
@@ -325,5 +323,7 @@ namespace Gestion_inscription
         public System.Windows.Forms.ToolStripMenuItem notesToolStrip;
         public System.Windows.Forms.ToolStripMenuItem parametresToolStrip;
         public System.Windows.Forms.ToolStripMenuItem inscriptionsToolStrip;
+        public System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem connexionToolStripMenuItem;
     }
 }

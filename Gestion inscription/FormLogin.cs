@@ -73,6 +73,7 @@ namespace Gestion_inscription
                     GestionInscrit.object_GestionIn.modulesToolStrip.Enabled = true;
                     GestionInscrit.object_GestionIn.parametresToolStrip.Enabled = true;
                     GestionInscrit.object_GestionIn.inscriptionsToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.connexionToolStripMenuItem.Text = "Deconnexion";
 
                     //notify me when login is true 
 

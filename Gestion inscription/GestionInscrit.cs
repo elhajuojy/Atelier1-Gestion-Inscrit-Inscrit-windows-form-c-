@@ -52,7 +52,7 @@ namespace Gestion_inscription
 
         private void BtnNewinscrit_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void gestionUtilisateurToolStrip_Click(object sender, EventArgs e)
