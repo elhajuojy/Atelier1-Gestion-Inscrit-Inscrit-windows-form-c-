@@ -23,8 +23,8 @@ namespace Gestion_inscription
         string CnxString = ConfigurationManager.ConnectionStrings["CtnStrinscrits"].ConnectionString;
         private void btnConneter_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
 
                 //CnxString is defined as public 
 
@@ -91,16 +91,16 @@ namespace Gestion_inscription
                 }
                 ctn.Close();
                 dr.Close();
-            }
+            //}
 
-            catch (Exception ex)
-            {
-                MessageBox.Show("Exception", ex.ToString());
-            }
-            finally
-            {
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Exception", ex.ToString());
+            //}
+            //finally
+            //{
 
-            }
+            //}
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
