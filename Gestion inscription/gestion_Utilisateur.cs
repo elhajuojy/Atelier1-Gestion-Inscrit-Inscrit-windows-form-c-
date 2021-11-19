@@ -102,6 +102,23 @@ namespace Gestion_inscription
             }
             ctn.Close();
             dr1.Close();
+            cmd.CommandText = "select * from utilisateurs where profile='o';";
+            cmd.Connection = ctn;
+            ctn.Open();
+            SqlDataReader dr2 = cmd.ExecuteReader();
+            this.TreeView_utilisateurs.Nodes.Add("Operat");
+
+            while (dr2.Read())
+            {
+                TreeNode node2 = new TreeNode(dr2["login"].ToString());
+                node2.Nodes.Add(dr2["profile"].ToString());
+                node2.Nodes.Add(dr2["nom"].ToString());
+                this.TreeView_utilisateurs.Nodes.Add(node2);
+
+
+            }
+            ctn.Close();
+            dr2.Close();
 
 
         }

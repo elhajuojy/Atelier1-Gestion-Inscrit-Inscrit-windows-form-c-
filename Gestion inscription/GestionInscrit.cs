@@ -13,7 +13,7 @@ namespace Gestion_inscription
     public partial class GestionInscrit : Form
     {
         //create mdiparent object for active toolstrip in connexion form 
-        public static GestionInscrit mdiobject;
+        public static GestionInscrit object_GestionIn;
 
 
 
@@ -31,7 +31,7 @@ namespace Gestion_inscription
             // fill mdiParent with connexion form 
             c1.Dock = DockStyle.Fill;
             // mdi parent object
-            mdiobject = this;
+            object_GestionIn = this;
 
         }
 
@@ -47,7 +47,7 @@ namespace Gestion_inscription
 
         private void GestionInscrit_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void BtnNewinscrit_Click(object sender, EventArgs e)
@@ -57,14 +57,14 @@ namespace Gestion_inscription
 
         private void gestionUtilisateurToolStrip_Click(object sender, EventArgs e)
         {
-
+            GestionInscrit.object_GestionIn.LabelForUpperName.Text = string.Empty;
             gestion_Utilisateur geform = new gestion_Utilisateur();
             geform.MdiParent = this;
             geform.Show();
             // fill mdiParent with connexion form 
             geform.Dock = DockStyle.Fill;
             // mdi parent object
-            mdiobject = this;
+            object_GestionIn = this;
         }
     }
 }

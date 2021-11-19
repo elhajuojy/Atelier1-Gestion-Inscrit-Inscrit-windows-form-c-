@@ -31,9 +31,13 @@ namespace Gestion_inscription
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionInscrit));
             this.TooStrip = new System.Windows.Forms.ToolStrip();
+            this.BtnNewinscrit = new System.Windows.Forms.ToolStripButton();
             this.NewInscrit = new System.Windows.Forms.ToolStripLabel();
+            this.btnFilieres = new System.Windows.Forms.ToolStripButton();
             this.TextFilieres = new System.Windows.Forms.ToolStripLabel();
+            this.BtnNotes = new System.Windows.Forms.ToolStripButton();
             this.textNote = new System.Windows.Forms.ToolStripLabel();
+            this.btnModules = new System.Windows.Forms.ToolStripButton();
             this.textModules = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,10 +52,6 @@ namespace Gestion_inscription
             this.parametresToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionUtilisateurToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.LabelForUpperName = new System.Windows.Forms.Label();
-            this.BtnNewinscrit = new System.Windows.Forms.ToolStripButton();
-            this.btnFilieres = new System.Windows.Forms.ToolStripButton();
-            this.BtnNotes = new System.Windows.Forms.ToolStripButton();
-            this.btnModules = new System.Windows.Forms.ToolStripButton();
             this.TooStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +80,18 @@ namespace Gestion_inscription
             this.TooStrip.Text = "ToolStrip";
             this.TooStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.TooStrip_ItemClicked);
             // 
+            // BtnNewinscrit
+            // 
+            this.BtnNewinscrit.AutoSize = false;
+            this.BtnNewinscrit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnNewinscrit.Image = global::Gestion_inscription.Properties.Resources.PikPng_com_profile_icon_png_80506811;
+            this.BtnNewinscrit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.BtnNewinscrit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnNewinscrit.Name = "BtnNewinscrit";
+            this.BtnNewinscrit.Size = new System.Drawing.Size(140, 90);
+            this.BtnNewinscrit.Text = "New inscrit";
+            this.BtnNewinscrit.Click += new System.EventHandler(this.BtnNewinscrit_Click);
+            // 
             // NewInscrit
             // 
             this.NewInscrit.AutoSize = false;
@@ -89,6 +101,20 @@ namespace Gestion_inscription
             this.NewInscrit.Size = new System.Drawing.Size(101, 20);
             this.NewInscrit.Text = "New inscrit ";
             // 
+            // btnFilieres
+            // 
+            this.btnFilieres.AutoSize = false;
+            this.btnFilieres.AutoToolTip = false;
+            this.btnFilieres.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnFilieres.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnFilieres.Image = global::Gestion_inscription.Properties.Resources.icons8_folder_50;
+            this.btnFilieres.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnFilieres.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnFilieres.Name = "btnFilieres";
+            this.btnFilieres.RightToLeftAutoMirrorImage = true;
+            this.btnFilieres.Size = new System.Drawing.Size(150, 80);
+            this.btnFilieres.Text = "filieres";
+            // 
             // TextFilieres
             // 
             this.TextFilieres.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,6 +123,17 @@ namespace Gestion_inscription
             this.TextFilieres.Size = new System.Drawing.Size(128, 20);
             this.TextFilieres.Text = "Filieres";
             // 
+            // BtnNotes
+            // 
+            this.BtnNotes.AutoSize = false;
+            this.BtnNotes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnNotes.Image = global::Gestion_inscription.Properties.Resources.icons8_note_64;
+            this.BtnNotes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.BtnNotes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnNotes.Name = "BtnNotes";
+            this.BtnNotes.Size = new System.Drawing.Size(150, 90);
+            this.BtnNotes.Text = "Notes";
+            // 
             // textNote
             // 
             this.textNote.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,6 +141,16 @@ namespace Gestion_inscription
             this.textNote.Name = "textNote";
             this.textNote.Size = new System.Drawing.Size(128, 20);
             this.textNote.Text = "Notes";
+            // 
+            // btnModules
+            // 
+            this.btnModules.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnModules.Image = global::Gestion_inscription.Properties.Resources.icons8_module_641;
+            this.btnModules.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnModules.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnModules.Name = "btnModules";
+            this.btnModules.Size = new System.Drawing.Size(128, 68);
+            this.btnModules.Text = "Modules";
             // 
             // textModules
             // 
@@ -219,7 +266,7 @@ namespace Gestion_inscription
             // 
             this.gestionUtilisateurToolStrip.Enabled = false;
             this.gestionUtilisateurToolStrip.Name = "gestionUtilisateurToolStrip";
-            this.gestionUtilisateurToolStrip.Size = new System.Drawing.Size(224, 26);
+            this.gestionUtilisateurToolStrip.Size = new System.Drawing.Size(217, 26);
             this.gestionUtilisateurToolStrip.Text = "Gestion Utilisateur";
             this.gestionUtilisateurToolStrip.Click += new System.EventHandler(this.gestionUtilisateurToolStrip_Click);
             // 
@@ -231,52 +278,6 @@ namespace Gestion_inscription
             this.LabelForUpperName.Name = "LabelForUpperName";
             this.LabelForUpperName.Size = new System.Drawing.Size(0, 17);
             this.LabelForUpperName.TabIndex = 20;
-            // 
-            // BtnNewinscrit
-            // 
-            this.BtnNewinscrit.AutoSize = false;
-            this.BtnNewinscrit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnNewinscrit.Image = global::Gestion_inscription.Properties.Resources.PikPng_com_profile_icon_png_80506811;
-            this.BtnNewinscrit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.BtnNewinscrit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnNewinscrit.Name = "BtnNewinscrit";
-            this.BtnNewinscrit.Size = new System.Drawing.Size(140, 90);
-            this.BtnNewinscrit.Text = "New inscrit";
-            this.BtnNewinscrit.Click += new System.EventHandler(this.BtnNewinscrit_Click);
-            // 
-            // btnFilieres
-            // 
-            this.btnFilieres.AutoSize = false;
-            this.btnFilieres.AutoToolTip = false;
-            this.btnFilieres.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnFilieres.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnFilieres.Image = global::Gestion_inscription.Properties.Resources.icons8_folder_50;
-            this.btnFilieres.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnFilieres.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnFilieres.Name = "btnFilieres";
-            this.btnFilieres.Size = new System.Drawing.Size(150, 80);
-            this.btnFilieres.Text = "filieres";
-            // 
-            // BtnNotes
-            // 
-            this.BtnNotes.AutoSize = false;
-            this.BtnNotes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnNotes.Image = global::Gestion_inscription.Properties.Resources.icons8_note_64;
-            this.BtnNotes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.BtnNotes.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnNotes.Name = "BtnNotes";
-            this.BtnNotes.Size = new System.Drawing.Size(150, 90);
-            this.BtnNotes.Text = "Notes";
-            // 
-            // btnModules
-            // 
-            this.btnModules.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnModules.Image = global::Gestion_inscription.Properties.Resources.icons8_module_641;
-            this.btnModules.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnModules.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnModules.Name = "btnModules";
-            this.btnModules.Size = new System.Drawing.Size(128, 68);
-            this.btnModules.Text = "Modules";
             // 
             // GestionInscrit
             // 

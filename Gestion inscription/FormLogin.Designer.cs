@@ -43,14 +43,18 @@ namespace Gestion_inscription
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.notifyMe = new System.Windows.Forms.NotifyIcon(this.components);
+            this.lebelAuthenitifcation = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnAnnuler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // labelPasswordfalse
             // 
             this.labelPasswordfalse.AutoSize = true;
             this.labelPasswordfalse.ForeColor = System.Drawing.Color.Red;
-            this.labelPasswordfalse.Location = new System.Drawing.Point(655, 303);
+            this.labelPasswordfalse.Location = new System.Drawing.Point(658, 360);
             this.labelPasswordfalse.Name = "labelPasswordfalse";
             this.labelPasswordfalse.Size = new System.Drawing.Size(0, 17);
             this.labelPasswordfalse.TabIndex = 31;
@@ -59,9 +63,10 @@ namespace Gestion_inscription
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox3.Location = new System.Drawing.Point(539, 425);
+            this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Location = new System.Drawing.Point(542, 472);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(148, 21);
+            this.checkBox3.Size = new System.Drawing.Size(148, 23);
             this.checkBox3.TabIndex = 30;
             this.checkBox3.Text = "Keep me logged in";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -71,7 +76,7 @@ namespace Gestion_inscription
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label6.Location = new System.Drawing.Point(415, 109);
+            this.label6.Location = new System.Drawing.Point(418, 166);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 20);
             this.label6.TabIndex = 29;
@@ -82,7 +87,7 @@ namespace Gestion_inscription
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.8F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(378, 252);
+            this.label4.Location = new System.Drawing.Point(381, 309);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(156, 51);
             this.label4.TabIndex = 28;
@@ -94,7 +99,7 @@ namespace Gestion_inscription
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(378, 188);
+            this.label3.Location = new System.Drawing.Point(381, 245);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 51);
             this.label3.TabIndex = 27;
@@ -104,10 +109,10 @@ namespace Gestion_inscription
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(539, 321);
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.Location = new System.Drawing.Point(542, 363);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(134, 24);
+            this.checkBox1.Size = new System.Drawing.Size(127, 23);
             this.checkBox1.TabIndex = 26;
             this.checkBox1.Text = "show password";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -119,9 +124,9 @@ namespace Gestion_inscription
             this.btnConneter.FlatAppearance.BorderSize = 0;
             this.btnConneter.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConneter.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnConneter.Location = new System.Drawing.Point(539, 368);
+            this.btnConneter.Location = new System.Drawing.Point(542, 415);
             this.btnConneter.Name = "btnConneter";
-            this.btnConneter.Size = new System.Drawing.Size(188, 51);
+            this.btnConneter.Size = new System.Drawing.Size(188, 48);
             this.btnConneter.TabIndex = 25;
             this.btnConneter.Text = "Se connecter";
             this.btnConneter.UseVisualStyleBackColor = false;
@@ -132,11 +137,11 @@ namespace Gestion_inscription
             this.textpass.BackColor = System.Drawing.SystemColors.MenuBar;
             this.textpass.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textpass.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textpass.Location = new System.Drawing.Point(539, 252);
+            this.textpass.Location = new System.Drawing.Point(542, 309);
             this.textpass.Multiline = true;
             this.textpass.Name = "textpass";
             this.textpass.PasswordChar = '*';
-            this.textpass.Size = new System.Drawing.Size(289, 48);
+            this.textpass.Size = new System.Drawing.Size(337, 48);
             this.textpass.TabIndex = 24;
             // 
             // textLogin
@@ -144,10 +149,10 @@ namespace Gestion_inscription
             this.textLogin.BackColor = System.Drawing.SystemColors.MenuBar;
             this.textLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textLogin.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textLogin.Location = new System.Drawing.Point(539, 188);
+            this.textLogin.Location = new System.Drawing.Point(542, 245);
             this.textLogin.Multiline = true;
             this.textLogin.Name = "textLogin";
-            this.textLogin.Size = new System.Drawing.Size(289, 47);
+            this.textLogin.Size = new System.Drawing.Size(337, 47);
             this.textLogin.TabIndex = 23;
             // 
             // label1
@@ -155,7 +160,7 @@ namespace Gestion_inscription
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(531, 81);
+            this.label1.Location = new System.Drawing.Point(534, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(289, 60);
             this.label1.TabIndex = 22;
@@ -165,7 +170,7 @@ namespace Gestion_inscription
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Gestion_inscription.Properties.Resources.Logo_ofppt_back1;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 109);
+            this.pictureBox1.Location = new System.Drawing.Point(47, 166);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(310, 283);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -178,12 +183,51 @@ namespace Gestion_inscription
             this.notifyMe.Text = "NotifyMe";
             this.notifyMe.Visible = true;
             // 
+            // lebelAuthenitifcation
+            // 
+            this.lebelAuthenitifcation.BackColor = System.Drawing.Color.Transparent;
+            this.lebelAuthenitifcation.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lebelAuthenitifcation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lebelAuthenitifcation.Location = new System.Drawing.Point(12, 20);
+            this.lebelAuthenitifcation.Name = "lebelAuthenitifcation";
+            this.lebelAuthenitifcation.Size = new System.Drawing.Size(358, 50);
+            this.lebelAuthenitifcation.TabIndex = 32;
+            this.lebelAuthenitifcation.Text = "Authentification";
+            this.lebelAuthenitifcation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Gestion_inscription.Properties.Resources.avatardefault_92824__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(806, 122);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 33;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnAnnuler.FlatAppearance.BorderSize = 0;
+            this.btnAnnuler.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnuler.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnAnnuler.Location = new System.Drawing.Point(736, 415);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(143, 48);
+            this.btnAnnuler.TabIndex = 34;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = false;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(962, 518);
+            this.ClientSize = new System.Drawing.Size(958, 534);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.lebelAuthenitifcation);
             this.Controls.Add(this.labelPasswordfalse);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.label6);
@@ -199,6 +243,7 @@ namespace Gestion_inscription
             this.Name = "FormLogin";
             this.Text = "FormLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,5 +263,8 @@ namespace Gestion_inscription
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.NotifyIcon notifyMe;
+        private System.Windows.Forms.Label lebelAuthenitifcation;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnAnnuler;
     }
 }

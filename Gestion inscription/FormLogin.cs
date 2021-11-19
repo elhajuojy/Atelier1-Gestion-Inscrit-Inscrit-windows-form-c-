@@ -18,6 +18,7 @@ namespace Gestion_inscription
         {
             InitializeComponent();
         }
+
         // connection string 
         string CnxString = ConfigurationManager.ConnectionStrings["CtnStrinscrits"].ConnectionString;
         private void btnConneter_Click(object sender, EventArgs e)
@@ -39,7 +40,8 @@ namespace Gestion_inscription
                 SqlParameter paramPW = new SqlParameter("@pw", textpass.Text);
                 paramPW.Direction = ParameterDirection.Input;
                 cmd.Parameters.Add(paramPW);
-
+                
+                //open 
                 ctn.Open();
                 SqlDataReader dr;
                 dr = cmd.ExecuteReader();
@@ -54,18 +56,18 @@ namespace Gestion_inscription
 
 
                     //Enbabled Toostrip from MdiParent1
-                    GestionInscrit.mdiobject.TooStrip.Enabled = true;
-                    GestionInscrit.mdiobject.LabelForUpperName.Text = LoginPass.varlog.ToString();
-                    GestionInscrit.mdiobject.notationsToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.FilieresToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.gestionUtilisateurToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.inscrptionsToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.FilieresToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.inscrptionsToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.notesToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.modulesToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.parametresToolStrip.Enabled = true;
-                    GestionInscrit.mdiobject.inscriptionsToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.TooStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.LabelForUpperName.Text = LoginPass.varlog.ToString();
+                    GestionInscrit.object_GestionIn.notationsToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.FilieresToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.gestionUtilisateurToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.inscrptionsToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.FilieresToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.inscrptionsToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.notesToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.modulesToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.parametresToolStrip.Enabled = true;
+                    GestionInscrit.object_GestionIn.inscriptionsToolStrip.Enabled = true;
 
                     //notify me when login is true 
 
@@ -111,6 +113,12 @@ namespace Gestion_inscription
 
 
             }
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            textLogin.Text = string.Empty;
+            textpass.Text = string.Empty;
         }
     }
 }
