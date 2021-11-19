@@ -122,5 +122,42 @@ namespace Gestion_inscription
 
 
         }
+
+        private void toolStripBtnAjouter_Click(object sender, EventArgs e)
+        {
+            SqlConnection ctn = new SqlConnection(CnxString);
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandText = "insert into utilisateurs values (@login,@pw,@profile,@nom,@prenom,@function);";
+            cmd.Parameters.AddWithValue("@login", textloginProfile.Text);
+            cmd.Connection = ctn;
+            cmd.Parameters.AddWithValue("@pw", textMotePasseProfile.Text);
+            if (radioAdmin.Checked == true)
+            {
+                cmd.Parameters.AddWithValue("@profile",'a');
+                cmd.Parameters.AddWithValue("@function","Administra");
+
+            }
+            else if (radioUtilisat.Checked == true)
+            {
+                cmd.Parameters.AddWithValue("@profile", 'u');
+                cmd.Parameters.AddWithValue("@function", "Utilisat");
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@profile", 'o');
+                cmd.Parameters.AddWithValue("@function", "Operat");
+            }
+
+            cmd.Parameters.AddWithValue("@nom", textNom.Text);
+            cmd.Parameters.AddWithValue("@prenom", textPrenom.Text);
+
+            ctn.Open();
+
+            int rowseffected = cmd.ExecuteNonQuery();
+            MessageBox.Show("Rows Effected",rowseffected.ToString());
+
+            cmd.Connection = ctn;
+        }
     }
 }

@@ -30,19 +30,19 @@ namespace Gestion_inscription
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.Ajouter = new System.Windows.Forms.ToolStripButton();
+            this.toolStripBtnAjouter = new System.Windows.Forms.ToolStripButton();
             this.Modification = new System.Windows.Forms.ToolStripButton();
             this.Suppression = new System.Windows.Forms.ToolStripButton();
             this.Recherche = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtpw = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtlogin = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -52,12 +52,12 @@ namespace Gestion_inscription
             this.labelnom = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioOperat = new System.Windows.Forms.RadioButton();
+            this.radioUtilisat = new System.Windows.Forms.RadioButton();
             this.radioAdmin = new System.Windows.Forms.RadioButton();
-            this.textMotePasse = new System.Windows.Forms.TextBox();
+            this.textMotePasseProfile = new System.Windows.Forms.TextBox();
             this.labelpassword = new System.Windows.Forms.Label();
-            this.textlogin = new System.Windows.Forms.TextBox();
+            this.textloginProfile = new System.Windows.Forms.TextBox();
             this.labellogin = new System.Windows.Forms.Label();
             this.TreeView_utilisateurs = new System.Windows.Forms.TreeView();
             this.btnchercher = new System.Windows.Forms.Button();
@@ -78,7 +78,7 @@ namespace Gestion_inscription
             this.toolStrip1.AutoSize = false;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Ajouter,
+            this.toolStripBtnAjouter,
             this.Modification,
             this.Suppression,
             this.Recherche});
@@ -89,16 +89,17 @@ namespace Gestion_inscription
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
-            // Ajouter
+            // toolStripBtnAjouter
             // 
-            this.Ajouter.AutoSize = false;
-            this.Ajouter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Ajouter.Image = global::Gestion_inscription.Properties.Resources.plus__1_;
-            this.Ajouter.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.Ajouter.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Ajouter.Name = "Ajouter";
-            this.Ajouter.Size = new System.Drawing.Size(50, 57);
-            this.Ajouter.Text = "Ajouter";
+            this.toolStripBtnAjouter.AutoSize = false;
+            this.toolStripBtnAjouter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripBtnAjouter.Image = global::Gestion_inscription.Properties.Resources.plus__1_;
+            this.toolStripBtnAjouter.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripBtnAjouter.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripBtnAjouter.Name = "toolStripBtnAjouter";
+            this.toolStripBtnAjouter.Size = new System.Drawing.Size(50, 57);
+            this.toolStripBtnAjouter.Text = "Ajouter";
+            this.toolStripBtnAjouter.Click += new System.EventHandler(this.toolStripBtnAjouter_Click);
             // 
             // Modification
             // 
@@ -159,13 +160,13 @@ namespace Gestion_inscription
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.btnchercher);
-            this.groupBox5.Controls.Add(this.textBox3);
+            this.groupBox5.Controls.Add(this.txtPrenom);
             this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Controls.Add(this.textBox4);
+            this.groupBox5.Controls.Add(this.txtNom);
             this.groupBox5.Controls.Add(this.label4);
-            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.txtpw);
             this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.txtlogin);
             this.groupBox5.Controls.Add(this.label2);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(12, 3);
@@ -175,13 +176,13 @@ namespace Gestion_inscription
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Reacherche";
             // 
-            // textBox3
+            // txtPrenom
             // 
-            this.textBox3.Location = new System.Drawing.Point(612, 63);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 32);
-            this.textBox3.TabIndex = 11;
+            this.txtPrenom.Location = new System.Drawing.Point(612, 63);
+            this.txtPrenom.Multiline = true;
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(277, 32);
+            this.txtPrenom.TabIndex = 11;
             // 
             // label3
             // 
@@ -192,13 +193,13 @@ namespace Gestion_inscription
             this.label3.TabIndex = 10;
             this.label3.Text = "Prenom";
             // 
-            // textBox4
+            // txtNom
             // 
-            this.textBox4.Location = new System.Drawing.Point(612, 25);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(277, 32);
-            this.textBox4.TabIndex = 9;
+            this.txtNom.Location = new System.Drawing.Point(612, 25);
+            this.txtNom.Multiline = true;
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(277, 32);
+            this.txtNom.TabIndex = 9;
             // 
             // label4
             // 
@@ -209,13 +210,13 @@ namespace Gestion_inscription
             this.label4.TabIndex = 8;
             this.label4.Text = "Nom";
             // 
-            // textBox1
+            // txtpw
             // 
-            this.textBox1.Location = new System.Drawing.Point(183, 63);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 32);
-            this.textBox1.TabIndex = 7;
+            this.txtpw.Location = new System.Drawing.Point(183, 63);
+            this.txtpw.Multiline = true;
+            this.txtpw.Name = "txtpw";
+            this.txtpw.Size = new System.Drawing.Size(285, 32);
+            this.txtpw.TabIndex = 7;
             // 
             // label1
             // 
@@ -226,13 +227,13 @@ namespace Gestion_inscription
             this.label1.TabIndex = 6;
             this.label1.Text = "Mote de passe";
             // 
-            // textBox2
+            // txtlogin
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 25);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(285, 32);
-            this.textBox2.TabIndex = 5;
+            this.txtlogin.Location = new System.Drawing.Point(183, 25);
+            this.txtlogin.Multiline = true;
+            this.txtlogin.Name = "txtlogin";
+            this.txtlogin.Size = new System.Drawing.Size(285, 32);
+            this.txtlogin.TabIndex = 5;
             // 
             // label2
             // 
@@ -304,9 +305,9 @@ namespace Gestion_inscription
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.textMotePasse);
+            this.groupBox2.Controls.Add(this.textMotePasseProfile);
             this.groupBox2.Controls.Add(this.labelpassword);
-            this.groupBox2.Controls.Add(this.textlogin);
+            this.groupBox2.Controls.Add(this.textloginProfile);
             this.groupBox2.Controls.Add(this.labellogin);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(15, 21);
@@ -319,8 +320,8 @@ namespace Gestion_inscription
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton3);
-            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.radioOperat);
+            this.groupBox3.Controls.Add(this.radioUtilisat);
             this.groupBox3.Controls.Add(this.radioAdmin);
             this.groupBox3.Location = new System.Drawing.Point(59, 142);
             this.groupBox3.Name = "groupBox3";
@@ -329,27 +330,27 @@ namespace Gestion_inscription
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Neaveau d\'Access";
             // 
-            // radioButton3
+            // radioOperat
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(35, 98);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(77, 24);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Operat";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioOperat.AutoSize = true;
+            this.radioOperat.Location = new System.Drawing.Point(35, 98);
+            this.radioOperat.Name = "radioOperat";
+            this.radioOperat.Size = new System.Drawing.Size(77, 24);
+            this.radioOperat.TabIndex = 2;
+            this.radioOperat.TabStop = true;
+            this.radioOperat.Text = "Operat";
+            this.radioOperat.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioUtilisat
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(35, 68);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(77, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Utilisat";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioUtilisat.AutoSize = true;
+            this.radioUtilisat.Location = new System.Drawing.Point(35, 68);
+            this.radioUtilisat.Name = "radioUtilisat";
+            this.radioUtilisat.Size = new System.Drawing.Size(77, 24);
+            this.radioUtilisat.TabIndex = 1;
+            this.radioUtilisat.TabStop = true;
+            this.radioUtilisat.Text = "Utilisat";
+            this.radioUtilisat.UseVisualStyleBackColor = true;
             // 
             // radioAdmin
             // 
@@ -362,13 +363,13 @@ namespace Gestion_inscription
             this.radioAdmin.Text = "Administra";
             this.radioAdmin.UseVisualStyleBackColor = true;
             // 
-            // textMotePasse
+            // textMotePasseProfile
             // 
-            this.textMotePasse.Location = new System.Drawing.Point(188, 82);
-            this.textMotePasse.Multiline = true;
-            this.textMotePasse.Name = "textMotePasse";
-            this.textMotePasse.Size = new System.Drawing.Size(214, 32);
-            this.textMotePasse.TabIndex = 3;
+            this.textMotePasseProfile.Location = new System.Drawing.Point(188, 82);
+            this.textMotePasseProfile.Multiline = true;
+            this.textMotePasseProfile.Name = "textMotePasseProfile";
+            this.textMotePasseProfile.Size = new System.Drawing.Size(214, 32);
+            this.textMotePasseProfile.TabIndex = 3;
             // 
             // labelpassword
             // 
@@ -379,13 +380,13 @@ namespace Gestion_inscription
             this.labelpassword.TabIndex = 2;
             this.labelpassword.Text = "Mote de passe";
             // 
-            // textlogin
+            // textloginProfile
             // 
-            this.textlogin.Location = new System.Drawing.Point(188, 24);
-            this.textlogin.Multiline = true;
-            this.textlogin.Name = "textlogin";
-            this.textlogin.Size = new System.Drawing.Size(214, 32);
-            this.textlogin.TabIndex = 1;
+            this.textloginProfile.Location = new System.Drawing.Point(188, 24);
+            this.textloginProfile.Multiline = true;
+            this.textloginProfile.Name = "textloginProfile";
+            this.textloginProfile.Size = new System.Drawing.Size(214, 32);
+            this.textloginProfile.TabIndex = 1;
             // 
             // labellogin
             // 
@@ -407,11 +408,14 @@ namespace Gestion_inscription
             // 
             // btnchercher
             // 
-            this.btnchercher.Location = new System.Drawing.Point(895, 63);
+            this.btnchercher.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnchercher.Image = global::Gestion_inscription.Properties.Resources.btFiltre22;
+            this.btnchercher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnchercher.Location = new System.Drawing.Point(916, 63);
             this.btnchercher.Name = "btnchercher";
-            this.btnchercher.Size = new System.Drawing.Size(136, 32);
+            this.btnchercher.Size = new System.Drawing.Size(136, 33);
             this.btnchercher.TabIndex = 3;
-            this.btnchercher.Text = "chercher";
+            this.btnchercher.Text = "Chercher";
             this.btnchercher.UseVisualStyleBackColor = true;
             // 
             // gestion_Utilisateur
@@ -447,7 +451,7 @@ namespace Gestion_inscription
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton Ajouter;
+        private System.Windows.Forms.ToolStripButton toolStripBtnAjouter;
         private System.Windows.Forms.ToolStripButton Modification;
         private System.Windows.Forms.ToolStripButton Suppression;
         private System.Windows.Forms.ToolStripButton Recherche;
@@ -455,27 +459,27 @@ namespace Gestion_inscription
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TreeView TreeView_utilisateurs;
-        private System.Windows.Forms.TextBox textMotePasse;
+        private System.Windows.Forms.TextBox textMotePasseProfile;
         private System.Windows.Forms.Label labelpassword;
-        private System.Windows.Forms.TextBox textlogin;
+        private System.Windows.Forms.TextBox textloginProfile;
         private System.Windows.Forms.Label labellogin;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioOperat;
+        private System.Windows.Forms.RadioButton radioUtilisat;
         private System.Windows.Forms.RadioButton radioAdmin;
         private System.Windows.Forms.TextBox textPrenom;
         private System.Windows.Forms.Label labelprenom;
         private System.Windows.Forms.TextBox textNom;
         private System.Windows.Forms.Label labelnom;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrenom;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtpw;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtlogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnchercher;
     }

@@ -30,10 +30,15 @@ namespace Gestion_inscription
 
                 SqlConnection ctn = new SqlConnection(CnxString);
 
-                SqlCommand cmd = new SqlCommand("select login , pw  from utilisateurs where login = @login and pw = @pw;", ctn);
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = ctn;
+                cmd.CommandText = "sp_authentification";
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter paramLogin = new SqlParameter();
+                paramLogin.Direction = ParameterDirection.Input;
 
                 // using paramters 
-                SqlParameter paramLogin = new SqlParameter("@login", textLogin.Text);
+                paramLogin = new SqlParameter("@login", textLogin.Text);
                 paramLogin.Direction = ParameterDirection.Input;
                 cmd.Parameters.Add(paramLogin);
 
