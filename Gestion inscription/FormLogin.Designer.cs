@@ -46,7 +46,6 @@ namespace Gestion_inscription
             this.lebelAuthenitifcation = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnAnnuler = new System.Windows.Forms.Button();
-            this.btnclose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -220,24 +219,12 @@ namespace Gestion_inscription
             this.btnAnnuler.UseVisualStyleBackColor = false;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
-            // btnclose
-            // 
-            this.btnclose.BackColor = System.Drawing.Color.Transparent;
-            this.btnclose.Image = global::Gestion_inscription.Properties.Resources.btSupprimer22;
-            this.btnclose.Location = new System.Drawing.Point(920, 12);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(26, 25);
-            this.btnclose.TabIndex = 35;
-            this.btnclose.UseVisualStyleBackColor = false;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(958, 534);
-            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lebelAuthenitifcation);
@@ -279,6 +266,5 @@ namespace Gestion_inscription
         private System.Windows.Forms.Label lebelAuthenitifcation;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnAnnuler;
-        private System.Windows.Forms.Button btnclose;
     }
 }
