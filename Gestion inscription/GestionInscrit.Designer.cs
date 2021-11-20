@@ -75,7 +75,7 @@ namespace Gestion_inscription
             this.TooStrip.Location = new System.Drawing.Point(0, 35);
             this.TooStrip.Name = "TooStrip";
             this.TooStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.TooStrip.Size = new System.Drawing.Size(130, 757);
+            this.TooStrip.Size = new System.Drawing.Size(130, 793);
             this.TooStrip.TabIndex = 19;
             this.TooStrip.Text = "ToolStrip";
             this.TooStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.TooStrip_ItemClicked);
@@ -191,14 +191,14 @@ namespace Gestion_inscription
             // connexionToolStripMenuItem
             // 
             this.connexionToolStripMenuItem.Name = "connexionToolStripMenuItem";
-            this.connexionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.connexionToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.connexionToolStripMenuItem.Text = "Connexion";
             this.connexionToolStripMenuItem.Click += new System.EventHandler(this.connexionToolStripMenuItem_Click);
             // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -266,7 +266,7 @@ namespace Gestion_inscription
             // 
             this.gestionUtilisateurToolStrip.Enabled = false;
             this.gestionUtilisateurToolStrip.Name = "gestionUtilisateurToolStrip";
-            this.gestionUtilisateurToolStrip.Size = new System.Drawing.Size(224, 26);
+            this.gestionUtilisateurToolStrip.Size = new System.Drawing.Size(217, 26);
             this.gestionUtilisateurToolStrip.Text = "Gestion Utilisateur";
             this.gestionUtilisateurToolStrip.Click += new System.EventHandler(this.gestionUtilisateurToolStrip_Click);
             // 
@@ -274,7 +274,7 @@ namespace Gestion_inscription
             // 
             this.LabelForUpperName.AutoSize = true;
             this.LabelForUpperName.BackColor = System.Drawing.Color.Transparent;
-            this.LabelForUpperName.Location = new System.Drawing.Point(1265, 745);
+            this.LabelForUpperName.Location = new System.Drawing.Point(1198, 783);
             this.LabelForUpperName.Name = "LabelForUpperName";
             this.LabelForUpperName.Size = new System.Drawing.Size(0, 17);
             this.LabelForUpperName.TabIndex = 20;
@@ -283,7 +283,7 @@ namespace Gestion_inscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 792);
+            this.ClientSize = new System.Drawing.Size(1366, 828);
             this.Controls.Add(this.LabelForUpperName);
             this.Controls.Add(this.TooStrip);
             this.Controls.Add(this.menuStrip);

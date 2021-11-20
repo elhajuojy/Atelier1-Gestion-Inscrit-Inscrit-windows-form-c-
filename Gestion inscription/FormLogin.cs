@@ -126,5 +126,10 @@ namespace Gestion_inscription
             textLogin.Text = string.Empty;
             textpass.Text = string.Empty;
         }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -53,6 +53,12 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAjoModModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjoModModule.Designer.cs">
+      <DependentUpon>FrmAjoModModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionInscrit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjoModModule.resx">
+      <DependentUpon>FrmAjoModModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionInscrit.resx">
       <DependentUpon>GestionInscrit.cs</DependentUpon>

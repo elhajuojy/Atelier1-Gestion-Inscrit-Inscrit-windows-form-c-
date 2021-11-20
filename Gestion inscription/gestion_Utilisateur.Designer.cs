@@ -36,6 +36,7 @@ namespace Gestion_inscription
             this.Recherche = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnchercher = new System.Windows.Forms.Button();
             this.txtPrenom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
@@ -44,6 +45,7 @@ namespace Gestion_inscription
             this.label1 = new System.Windows.Forms.Label();
             this.txtlogin = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAfficher = new System.Windows.Forms.Button();
             this.groupBoxPorfile = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.idPrenom = new System.Windows.Forms.TextBox();
@@ -60,8 +62,7 @@ namespace Gestion_inscription
             this.textloginProfile = new System.Windows.Forms.TextBox();
             this.labellogin = new System.Windows.Forms.Label();
             this.TreeView_utilisateurs = new System.Windows.Forms.TreeView();
-            this.btnchercher = new System.Windows.Forms.Button();
-            this.btnAfficher = new System.Windows.Forms.Button();
+            this.btnclear = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -82,10 +83,11 @@ namespace Gestion_inscription
             this.toolStripBtnAjouter,
             this.Modification,
             this.Suppression,
-            this.Recherche});
+            this.Recherche,
+            this.btnclear});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1233, 87);
+            this.toolStrip1.Size = new System.Drawing.Size(1233, 86);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -141,7 +143,7 @@ namespace Gestion_inscription
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 87);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 86);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -156,8 +158,8 @@ namespace Gestion_inscription
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxPorfile);
             this.splitContainer1.Panel2.Controls.Add(this.TreeView_utilisateurs);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1233, 625);
-            this.splitContainer1.SplitterDistance = 127;
+            this.splitContainer1.Size = new System.Drawing.Size(1233, 626);
+            this.splitContainer1.SplitterDistance = 109;
             this.splitContainer1.TabIndex = 1;
             // 
             // groupBox5
@@ -178,6 +180,19 @@ namespace Gestion_inscription
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Reacherche";
+            // 
+            // btnchercher
+            // 
+            this.btnchercher.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnchercher.Image = global::Gestion_inscription.Properties.Resources.btFiltre22;
+            this.btnchercher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnchercher.Location = new System.Drawing.Point(916, 63);
+            this.btnchercher.Name = "btnchercher";
+            this.btnchercher.Size = new System.Drawing.Size(136, 33);
+            this.btnchercher.TabIndex = 3;
+            this.btnchercher.Text = "Chercher";
+            this.btnchercher.UseVisualStyleBackColor = true;
+            this.btnchercher.Click += new System.EventHandler(this.btnchercher_Click);
             // 
             // txtPrenom
             // 
@@ -247,13 +262,23 @@ namespace Gestion_inscription
             this.label2.TabIndex = 4;
             this.label2.Text = "Login";
             // 
+            // btnAfficher
+            // 
+            this.btnAfficher.Location = new System.Drawing.Point(372, 15);
+            this.btnAfficher.Name = "btnAfficher";
+            this.btnAfficher.Size = new System.Drawing.Size(108, 39);
+            this.btnAfficher.TabIndex = 2;
+            this.btnAfficher.Text = "Afficher";
+            this.btnAfficher.UseVisualStyleBackColor = true;
+            this.btnAfficher.Click += new System.EventHandler(this.btnAfficher_Click);
+            // 
             // groupBoxPorfile
             // 
             this.groupBoxPorfile.Controls.Add(this.groupBox4);
             this.groupBoxPorfile.Controls.Add(this.groupBox2);
             this.groupBoxPorfile.Location = new System.Drawing.Point(506, 15);
             this.groupBoxPorfile.Name = "groupBoxPorfile";
-            this.groupBoxPorfile.Size = new System.Drawing.Size(715, 465);
+            this.groupBoxPorfile.Size = new System.Drawing.Size(715, 495);
             this.groupBoxPorfile.TabIndex = 1;
             this.groupBoxPorfile.TabStop = false;
             // 
@@ -326,9 +351,9 @@ namespace Gestion_inscription
             this.groupBox3.Controls.Add(this.radioOperat);
             this.groupBox3.Controls.Add(this.radioUtilisat);
             this.groupBox3.Controls.Add(this.radioAdmin);
-            this.groupBox3.Location = new System.Drawing.Point(59, 142);
+            this.groupBox3.Location = new System.Drawing.Point(59, 135);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 158);
+            this.groupBox3.Size = new System.Drawing.Size(200, 165);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Neaveau d\'Access";
@@ -411,28 +436,17 @@ namespace Gestion_inscription
             this.TreeView_utilisateurs.Size = new System.Drawing.Size(468, 465);
             this.TreeView_utilisateurs.TabIndex = 0;
             // 
-            // btnchercher
+            // btnclear
             // 
-            this.btnchercher.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnchercher.Image = global::Gestion_inscription.Properties.Resources.btFiltre22;
-            this.btnchercher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnchercher.Location = new System.Drawing.Point(916, 63);
-            this.btnchercher.Name = "btnchercher";
-            this.btnchercher.Size = new System.Drawing.Size(136, 33);
-            this.btnchercher.TabIndex = 3;
-            this.btnchercher.Text = "Chercher";
-            this.btnchercher.UseVisualStyleBackColor = true;
-            this.btnchercher.Click += new System.EventHandler(this.btnchercher_Click);
-            // 
-            // btnAfficher
-            // 
-            this.btnAfficher.Location = new System.Drawing.Point(372, 15);
-            this.btnAfficher.Name = "btnAfficher";
-            this.btnAfficher.Size = new System.Drawing.Size(108, 39);
-            this.btnAfficher.TabIndex = 2;
-            this.btnAfficher.Text = "Afficher";
-            this.btnAfficher.UseVisualStyleBackColor = true;
-            this.btnAfficher.Click += new System.EventHandler(this.btnAfficher_Click);
+            this.btnclear.AutoSize = false;
+            this.btnclear.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnclear.Image = global::Gestion_inscription.Properties.Resources.btFermer32;
+            this.btnclear.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnclear.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnclear.Name = "btnclear";
+            this.btnclear.Size = new System.Drawing.Size(50, 57);
+            this.btnclear.Text = "clear ";
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // gestion_Utilisateur
             // 
@@ -499,5 +513,6 @@ namespace Gestion_inscription
         private System.Windows.Forms.Button btnchercher;
         public System.Windows.Forms.ToolStripButton toolStripBtnAjouter;
         private System.Windows.Forms.Button btnAfficher;
+        private System.Windows.Forms.ToolStripButton btnclear;
     }
 }

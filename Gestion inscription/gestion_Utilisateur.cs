@@ -64,72 +64,141 @@ namespace Gestion_inscription
 
         private void Modification_Click(object sender, EventArgs e)
         {
+            SqlConnection ctn = new SqlConnection(CnxString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "UPDATE utilisateurs SET  pw = @pw, profile = @profile, nom =@nom, prenom = @prenom ,fonction= @function where login = @wherelogin ";
+            cmd.Connection = ctn;
+
+            cmd.Parameters.AddWithValue("@login", textloginProfile.Text);
+            cmd.Parameters.AddWithValue("@wherelogin", textloginProfile.Text);
+            cmd.Parameters.AddWithValue("@pw", textMotePasseProfile.Text);
+            cmd.Parameters.AddWithValue("@nom", idNom.Text);
+            cmd.Parameters.AddWithValue("@prenom", idPrenom.Text);
             
 
+            if (radioAdmin.Checked == true)
+             {
+                 cmd.Parameters.AddWithValue("@profile", 'a');
+                 cmd.Parameters.AddWithValue("@function", "Administra");
+
+             }
+             else if (radioUtilisat.Checked == true)
+             {
+                 cmd.Parameters.AddWithValue("@profile", 'u');
+                 cmd.Parameters.AddWithValue("@function", "Utilisat");
+             }
+             else
+             {
+                 cmd.Parameters.AddWithValue("@profile", 'o');
+                 cmd.Parameters.AddWithValue("@function", "Operat");
+             }
+
+            ctn.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (textloginProfile.Text == string.Empty & textMotePasseProfile.Text==string.Empty)
+            {
+                MessageBox.Show("les zone de text login est vide");
+                
+            }
+
+            else if (textloginProfileTobeRemmberd == textloginProfile.Text)
+            {
+               
+
+                MessageBox.Show(" Profile de :  " + textloginProfile.Text + " est Modifi", "Rows Effected");
+            }
+            else
+            {
+                MessageBox.Show("no possible de changer le login ");
+            }
+            ctn.Close();
+            dr.Close();
+            
 
         }
 
         private void toolStripBtnAjouter_Click(object sender, EventArgs e)
         {
-            SqlConnection ctn = new SqlConnection(CnxString);
-            SqlCommand cmd = new SqlCommand();
 
-            cmd.CommandText = "insert into utilisateurs values (@login,@pw,@profile,@nom,@prenom,@function);";
-            cmd.Parameters.AddWithValue("@login", textloginProfile.Text);
-            cmd.Connection = ctn;
-            cmd.Parameters.AddWithValue("@pw", textMotePasseProfile.Text);
+            try
+            {
 
-            if (textloginProfile.Text != string.Empty & textMotePasseProfile.Text!=string.Empty )
-            {
-                if (radioAdmin.Checked == true)
-            {
-                cmd.Parameters.AddWithValue("@profile",'a');
-                cmd.Parameters.AddWithValue("@function","Administra");
+                SqlConnection ctn = new SqlConnection(CnxString);
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.CommandText = "insert into utilisateurs values (@login,@pw,@profile,@nom,@prenom,@function);";
+                cmd.Connection = ctn;
+
+
+
+
+                cmd.Parameters.AddWithValue("@login", textloginProfile.Text);
+                cmd.Parameters.AddWithValue("@pw", textMotePasseProfile.Text);
+                cmd.Parameters.AddWithValue("@nom", idNom.Text);
+                cmd.Parameters.AddWithValue("@prenom", idPrenom.Text);
+
+                if (textloginProfile.Text != string.Empty & textMotePasseProfile.Text != string.Empty)
+                {
+                    if (radioAdmin.Checked == true)
+                    {
+                        cmd.Parameters.AddWithValue("@profile", 'a');
+                        cmd.Parameters.AddWithValue("@function", "Administra");
+
+                    }
+                    else if (radioUtilisat.Checked == true)
+                    {
+                        cmd.Parameters.AddWithValue("@profile", 'u');
+                        cmd.Parameters.AddWithValue("@function", "Utilisat");
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@profile", 'o');
+                        cmd.Parameters.AddWithValue("@function", "Operat");
+                    }
+
+                    ctn.Open();
+
+                    int rowseffected = cmd.ExecuteNonQuery();
+                    MessageBox.Show("New inscrit is add :  " + textloginProfile.Text, "new inscrit");
+
+                    ctn.Close();
+
+                    textloginProfile.Enabled = true;
+                    textloginProfile.Text = string.Empty;
+                    textMotePasseProfile.Text = string.Empty;
+                    idNom.Text = string.Empty;
+                    idPrenom.Text = string.Empty;
+                    radioAdmin.Checked = false;
+                    radioUtilisat.Checked = false;
+                    radioOperat.Checked = false;
+                    TreeView_utilisateurs.Nodes.Clear();
+                    txtlogin.Text = string.Empty;
+                    txtNom.Text = string.Empty;
+                    txtPrenom.Text = string.Empty;
+                    txtpw.Text = string.Empty;
+                    splitContainer1.Panel1Collapsed = true;
+                }
+                else
+                {
+                    MessageBox.Show("Fill les zone de text ", "excpetion");
+                }
 
             }
-            else if (radioUtilisat.Checked == true)
+            catch
             {
-                cmd.Parameters.AddWithValue("@profile", 'u');
-                cmd.Parameters.AddWithValue("@function", "Utilisat");
-            }
-            else
-            {
-                cmd.Parameters.AddWithValue("@profile", 'o');
-                cmd.Parameters.AddWithValue("@function", "Operat");
+                MessageBox.Show("ne peut pas ajouter le meme login ", "Exception");
             }
 
-            cmd.Parameters.AddWithValue("@nom", idNom.Text);
-            cmd.Parameters.AddWithValue("@prenom", idPrenom.Text);
 
-            ctn.Open();
-
-            int rowseffected = cmd.ExecuteNonQuery();
-            MessageBox.Show(rowseffected.ToString(),"Rows Effected");
-
-                textloginProfile.Text = string.Empty;
-                textMotePasseProfile.Text = string.Empty;
-                idNom.Text = string.Empty;
-                idPrenom.Text = string.Empty;
-                radioAdmin.Checked = false;
-                radioUtilisat.Checked = false;
-                radioOperat.Checked = false;
-            }
-            else
-            {
-                MessageBox.Show("Fill les zone de text ","excpetion");
-            }
-            
-
-            
         }
-
+        string textloginProfileTobeRemmberd;
         private void btnchercher_Click(object sender, EventArgs e)
         {
             SqlConnection ctn = new SqlConnection(CnxString);
             SqlCommand cmd = new SqlCommand();
             
-            
-
+           
 
             cmd.CommandText = "select * from utilisateurs where login=@login and pw=@pw and nom=@nom and prenom=@prenom";
             cmd.Connection = ctn;
@@ -142,7 +211,7 @@ namespace Gestion_inscription
             ctn.Open();
             SqlDataReader dr = cmd.ExecuteReader();
             
-            while (dr.Read())
+            if (dr.Read())
             {
                 TreeView_utilisateurs.Nodes.Clear();
 
@@ -162,6 +231,7 @@ namespace Gestion_inscription
 
                 textloginProfile.Text = dr["login"].ToString();
                 textMotePasseProfile.Text = dr["pw"].ToString();
+                textloginProfileTobeRemmberd = dr["login"].ToString();
                 idNom.Text = dr["nom"].ToString();
                 idPrenom.Text = dr["prenom"].ToString();
                 if (dr["profile"].ToString() == "a")
@@ -176,8 +246,12 @@ namespace Gestion_inscription
                 {
                     radioOperat.Checked = true;
                 }
+                textloginProfile.Enabled = false;
 
-
+            }
+            else
+            {
+                MessageBox.Show("no personne trouve ");
             }
             ctn.Close();
             dr.Close();
@@ -277,7 +351,46 @@ namespace Gestion_inscription
 
         private void Suppression_Click(object sender, EventArgs e)
         {
+            SqlConnection ctn = new SqlConnection(CnxString);
+            SqlCommand cmd = new SqlCommand();
 
+            cmd.CommandText = "DELETE FROM utilisateurs where login=@login ";
+            cmd.Connection = ctn;
+            cmd.Parameters.AddWithValue("@login", txtlogin.Text);
+            
+
+            ctn.Open();
+            int deleteLines =  cmd.ExecuteNonQuery();
+            MessageBox.Show("la suppersion bien effectuer ! "+txtlogin.Text);
+
+
+
+
+
+        }
+
+        private void btnclear_Click(object sender, EventArgs e)
+        {
+
+            textloginProfile.Enabled = true;
+            textloginProfile.Text = string.Empty;
+            textMotePasseProfile.Text = string.Empty;
+            idNom.Text = string.Empty;
+            idPrenom.Text = string.Empty;
+            radioAdmin.Checked = false;
+            radioUtilisat.Checked = false;
+            radioOperat.Checked = false;
+            TreeView_utilisateurs.Nodes.Clear();
+            txtlogin.Text = string.Empty;
+            txtNom.Text = string.Empty;
+            txtPrenom.Text = string.Empty;
+            txtpw.Text = string.Empty;
+            splitContainer1.Panel1Collapsed = true;
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
