@@ -23,6 +23,7 @@ namespace Gestion_inscription
         public gestion_Utilisateur()
         {
             InitializeComponent();
+            
         }
 
         private void gestion_Utilisateur_Load(object sender, EventArgs e)
@@ -388,9 +389,19 @@ namespace Gestion_inscription
             txtPrenom.Text = string.Empty;
             txtpw.Text = string.Empty;
             splitContainer1.Panel1Collapsed = true;
+            
         }
 
+       
         private void TreeView_utilisateurs_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
+        public void closeformthis()
+        {
+            this.Close();
+        }
+        private void groupBox5_Enter(object sender, EventArgs e)
         {
 
         }

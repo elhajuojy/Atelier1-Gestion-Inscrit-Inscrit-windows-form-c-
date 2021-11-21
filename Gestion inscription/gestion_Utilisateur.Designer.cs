@@ -192,6 +192,7 @@ namespace Gestion_inscription
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Reacherche";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // btnchercher
             // 

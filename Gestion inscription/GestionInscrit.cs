@@ -27,23 +27,26 @@ namespace Gestion_inscription
 
             if (connexionToolStripMenuItem.Text == "Connexion")
             {
-                FormLogin c1 = new FormLogin();
-                c1.MdiParent = this;
-                c1.Show();
+                FormLogin ConxFrm = new FormLogin();
+                ConxFrm.MdiParent = this;
+                ConxFrm.Show();
                 // fill mdiParent with connexion form 
-                c1.Dock = DockStyle.Fill;
+                ConxFrm.Dock = DockStyle.Fill;
                 // mdi parent object
                 object_GestionIn = this;
             }
             else
             {
-                FormLogin c1 = new FormLogin();
-                c1.MdiParent = this;
-                c1.Close();
 
-                //Enbabled Toostrip from MdiParent1
+
+                FormLogin ConxFrm = new FormLogin();
+                ConxFrm.MdiParent = this;
+                ConxFrm.Dock = DockStyle.Fill;
+                ConxFrm.Show();
+                object_GestionIn = this;
+
+
                 GestionInscrit.object_GestionIn.TooStrip.Enabled = false;
-                GestionInscrit.object_GestionIn.LabelForUpperName.Text = LoginPass.varlog.ToString();
                 GestionInscrit.object_GestionIn.notationsToolStrip.Enabled = false;
                 GestionInscrit.object_GestionIn.FilieresToolStrip.Enabled = false;
                 GestionInscrit.object_GestionIn.gestionUtilisateurToolStrip.Enabled = false;
@@ -55,7 +58,7 @@ namespace Gestion_inscription
                 GestionInscrit.object_GestionIn.parametresToolStrip.Enabled = false;
                 GestionInscrit.object_GestionIn.inscriptionsToolStrip.Enabled = false; 
                 GestionInscrit.object_GestionIn.connexionToolStripMenuItem.Text = "Connexion";
-
+                //gestion_Utilisateur.object_gestionUtilisateur.closeformthis();
             }
 
         }
@@ -77,7 +80,13 @@ namespace Gestion_inscription
 
         private void BtnNewinscrit_Click(object sender, EventArgs e)
         {
-           
+            gestion_Utilisateur geform = new gestion_Utilisateur();
+            geform.MdiParent = this;
+            geform.Show();
+            // fill mdiParent with connexion form 
+            geform.Dock = DockStyle.Fill;
+            // mdi parent object
+            object_GestionIn = this;
         }
 
         private void gestionUtilisateurToolStrip_Click(object sender, EventArgs e)
