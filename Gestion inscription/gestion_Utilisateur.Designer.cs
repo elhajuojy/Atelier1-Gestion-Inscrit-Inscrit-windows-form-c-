@@ -447,6 +447,7 @@ namespace Gestion_inscription
             this.TreeView_utilisateurs.PathSeparator = "*";
             this.TreeView_utilisateurs.Size = new System.Drawing.Size(468, 465);
             this.TreeView_utilisateurs.TabIndex = 0;
+            this.TreeView_utilisateurs.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeView_utilisateurs_AfterSelect);
             // 
             // gestion_Utilisateur
             // 

@@ -24,14 +24,39 @@ namespace Gestion_inscription
 
         private void connexionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-             
-            FormLogin c1 = new FormLogin();
-            c1.MdiParent = this;
-            c1.Show();
-            // fill mdiParent with connexion form 
-            c1.Dock = DockStyle.Fill;
-            // mdi parent object
-            object_GestionIn = this;
+
+            if (connexionToolStripMenuItem.Text == "Connexion")
+            {
+                FormLogin c1 = new FormLogin();
+                c1.MdiParent = this;
+                c1.Show();
+                // fill mdiParent with connexion form 
+                c1.Dock = DockStyle.Fill;
+                // mdi parent object
+                object_GestionIn = this;
+            }
+            else
+            {
+                FormLogin c1 = new FormLogin();
+                c1.MdiParent = this;
+                c1.Close();
+
+                //Enbabled Toostrip from MdiParent1
+                GestionInscrit.object_GestionIn.TooStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.LabelForUpperName.Text = LoginPass.varlog.ToString();
+                GestionInscrit.object_GestionIn.notationsToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.FilieresToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.gestionUtilisateurToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.inscrptionsToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.FilieresToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.inscrptionsToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.notesToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.modulesToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.parametresToolStrip.Enabled = false;
+                GestionInscrit.object_GestionIn.inscriptionsToolStrip.Enabled = false; 
+                GestionInscrit.object_GestionIn.connexionToolStripMenuItem.Text = "Connexion";
+
+            }
 
         }
 

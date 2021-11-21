@@ -69,7 +69,7 @@ namespace Gestion_inscription
             cmd.CommandText = "UPDATE utilisateurs SET  pw = @pw, profile = @profile, nom =@nom, prenom = @prenom ,fonction= @function where login = @wherelogin ";
             cmd.Connection = ctn;
 
-            cmd.Parameters.AddWithValue("@login", textloginProfile.Text);
+            
             cmd.Parameters.AddWithValue("@wherelogin", textloginProfile.Text);
             cmd.Parameters.AddWithValue("@pw", textMotePasseProfile.Text);
             cmd.Parameters.AddWithValue("@nom", idNom.Text);
@@ -132,7 +132,7 @@ namespace Gestion_inscription
 
 
 
-
+                
                 cmd.Parameters.AddWithValue("@login", textloginProfile.Text);
                 cmd.Parameters.AddWithValue("@pw", textMotePasseProfile.Text);
                 cmd.Parameters.AddWithValue("@nom", idNom.Text);
@@ -390,6 +390,9 @@ namespace Gestion_inscription
             splitContainer1.Panel1Collapsed = true;
         }
 
+        private void TreeView_utilisateurs_AfterSelect(object sender, TreeViewEventArgs e)
+        {
 
+        }
     }
 }
