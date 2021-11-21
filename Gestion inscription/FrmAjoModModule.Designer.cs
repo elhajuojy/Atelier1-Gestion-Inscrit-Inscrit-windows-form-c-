@@ -30,19 +30,19 @@ namespace Gestion_inscription
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSupprimer = new System.Windows.Forms.Button();
-            this.btnModifier = new System.Windows.Forms.Button();
-            this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnValider = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnModifier = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textNomModule = new System.Windows.Forms.TextBox();
             this.Nevgater = new System.Windows.Forms.GroupBox();
             this.btnPre = new System.Windows.Forms.Button();
             this.btnSuivant = new System.Windows.Forms.Button();
-            this.btnNouveau = new System.Windows.Forms.Button();
             this.s = new System.Windows.Forms.Button();
-            this.btnAjouter = new System.Windows.Forms.Button();
+            this.btnNouveau = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.Nevgater.SuspendLayout();
@@ -63,27 +63,17 @@ namespace Gestion_inscription
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu Module";
             // 
-            // btnSupprimer
+            // btnValider
             // 
-            this.btnSupprimer.Image = global::Gestion_inscription.Properties.Resources.btSupprimer32;
-            this.btnSupprimer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSupprimer.Location = new System.Drawing.Point(24, 73);
-            this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(148, 41);
-            this.btnSupprimer.TabIndex = 1;
-            this.btnSupprimer.Text = "       Supprimer";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
-            // 
-            // btnModifier
-            // 
-            this.btnModifier.Image = global::Gestion_inscription.Properties.Resources.btModifier32;
-            this.btnModifier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModifier.Location = new System.Drawing.Point(24, 120);
-            this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(148, 41);
-            this.btnModifier.TabIndex = 2;
-            this.btnModifier.Text = "    Modifier";
-            this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnValider.Image = global::Gestion_inscription.Properties.Resources.btEnregistrer32;
+            this.btnValider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnValider.Location = new System.Drawing.Point(24, 214);
+            this.btnValider.Name = "btnValider";
+            this.btnValider.Size = new System.Drawing.Size(148, 41);
+            this.btnValider.TabIndex = 4;
+            this.btnValider.Text = "   valider";
+            this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // btnAnnuler
             // 
@@ -96,16 +86,40 @@ namespace Gestion_inscription
             this.btnAnnuler.Text = "    Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
-            // btnValider
+            // btnModifier
             // 
-            this.btnValider.Image = global::Gestion_inscription.Properties.Resources.btEnregistrer32;
-            this.btnValider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnValider.Location = new System.Drawing.Point(24, 214);
-            this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(148, 41);
-            this.btnValider.TabIndex = 4;
-            this.btnValider.Text = "   valider";
-            this.btnValider.UseVisualStyleBackColor = true;
+            this.btnModifier.Image = global::Gestion_inscription.Properties.Resources.btModifier32;
+            this.btnModifier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModifier.Location = new System.Drawing.Point(24, 120);
+            this.btnModifier.Name = "btnModifier";
+            this.btnModifier.Size = new System.Drawing.Size(148, 41);
+            this.btnModifier.TabIndex = 2;
+            this.btnModifier.Text = "    Modifier";
+            this.btnModifier.UseVisualStyleBackColor = true;
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Image = global::Gestion_inscription.Properties.Resources.btSupprimer32;
+            this.btnSupprimer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSupprimer.Location = new System.Drawing.Point(24, 73);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(148, 41);
+            this.btnSupprimer.TabIndex = 1;
+            this.btnSupprimer.Text = "       Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.Image = global::Gestion_inscription.Properties.Resources.add;
+            this.btnAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAjouter.Location = new System.Drawing.Point(24, 26);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(148, 41);
+            this.btnAjouter.TabIndex = 0;
+            this.btnAjouter.Text = "     Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // label1
             // 
@@ -119,7 +133,7 @@ namespace Gestion_inscription
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textNomModule);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(230, 40);
@@ -130,13 +144,13 @@ namespace Gestion_inscription
             this.groupBox2.Text = "Ajouter/Supprimer Module";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // textBox1
+            // textNomModule
             // 
-            this.textBox1.Location = new System.Drawing.Point(178, 73);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(415, 36);
-            this.textBox1.TabIndex = 2;
+            this.textNomModule.Location = new System.Drawing.Point(178, 73);
+            this.textNomModule.Multiline = true;
+            this.textNomModule.Name = "textNomModule";
+            this.textNomModule.Size = new System.Drawing.Size(415, 36);
+            this.textNomModule.TabIndex = 2;
             // 
             // Nevgater
             // 
@@ -170,16 +184,6 @@ namespace Gestion_inscription
             this.btnSuivant.Text = "Suivant    >>";
             this.btnSuivant.UseVisualStyleBackColor = true;
             // 
-            // btnNouveau
-            // 
-            this.btnNouveau.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNouveau.Location = new System.Drawing.Point(332, 47);
-            this.btnNouveau.Name = "btnNouveau";
-            this.btnNouveau.Size = new System.Drawing.Size(148, 41);
-            this.btnNouveau.TabIndex = 6;
-            this.btnNouveau.Text = "Nouveau";
-            this.btnNouveau.UseVisualStyleBackColor = true;
-            // 
             // s
             // 
             this.s.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,25 +196,25 @@ namespace Gestion_inscription
             this.s.Text = "    Fermer";
             this.s.UseVisualStyleBackColor = true;
             // 
-            // btnAjouter
+            // btnNouveau
             // 
-            this.btnAjouter.Image = global::Gestion_inscription.Properties.Resources.add;
-            this.btnAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAjouter.Location = new System.Drawing.Point(24, 26);
-            this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(148, 41);
-            this.btnAjouter.TabIndex = 0;
-            this.btnAjouter.Text = "     Ajouter";
-            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnNouveau.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNouveau.Location = new System.Drawing.Point(332, 47);
+            this.btnNouveau.Name = "btnNouveau";
+            this.btnNouveau.Size = new System.Drawing.Size(148, 41);
+            this.btnNouveau.TabIndex = 6;
+            this.btnNouveau.Text = "Nouveau";
+            this.btnNouveau.UseVisualStyleBackColor = true;
             // 
             // FrmAjoModModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 391);
+            this.ClientSize = new System.Drawing.Size(985, 387);
             this.Controls.Add(this.Nevgater);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAjoModModule";
             this.Text = "FrmAjoModModule";
             this.groupBox1.ResumeLayout(false);
@@ -231,7 +235,7 @@ namespace Gestion_inscription
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textNomModule;
         private System.Windows.Forms.GroupBox Nevgater;
         private System.Windows.Forms.Button btnPre;
         private System.Windows.Forms.Button btnSuivant;

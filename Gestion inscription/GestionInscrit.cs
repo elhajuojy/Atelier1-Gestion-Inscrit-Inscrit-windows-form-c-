@@ -24,7 +24,7 @@ namespace Gestion_inscription
 
         private void connexionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+             
             FormLogin c1 = new FormLogin();
             c1.MdiParent = this;
             c1.Show();
@@ -63,6 +63,17 @@ namespace Gestion_inscription
             geform.Show();
             // fill mdiParent with connexion form 
             geform.Dock = DockStyle.Fill;
+            // mdi parent object
+            object_GestionIn = this;
+        }
+
+        private void modulesToolStrip_Click(object sender, EventArgs e)
+        {
+            FrmAjoModModule ModuleFrm = new FrmAjoModModule();
+            ModuleFrm.MdiParent = this;
+            ModuleFrm.Show();
+            // fill mdiParent with connexion form 
+            ModuleFrm.Dock = DockStyle.Fill;
             // mdi parent object
             object_GestionIn = this;
         }

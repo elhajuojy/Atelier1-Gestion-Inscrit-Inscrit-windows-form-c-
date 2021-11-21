@@ -143,6 +143,7 @@ namespace Gestion_inscription
             this.textpass.PasswordChar = '*';
             this.textpass.Size = new System.Drawing.Size(337, 48);
             this.textpass.TabIndex = 24;
+            this.textpass.TextChanged += new System.EventHandler(this.textpass_TextChanged);
             // 
             // textLogin
             // 
@@ -242,6 +243,7 @@ namespace Gestion_inscription
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
             this.Text = "FormLogin";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

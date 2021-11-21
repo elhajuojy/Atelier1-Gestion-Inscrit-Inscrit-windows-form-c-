@@ -217,14 +217,14 @@ namespace Gestion_inscription
             // 
             this.inscrptionsToolStrip.Enabled = false;
             this.inscrptionsToolStrip.Name = "inscrptionsToolStrip";
-            this.inscrptionsToolStrip.Size = new System.Drawing.Size(170, 26);
+            this.inscrptionsToolStrip.Size = new System.Drawing.Size(224, 26);
             this.inscrptionsToolStrip.Text = "Inscriptions";
             // 
             // FilieresToolStrip
             // 
             this.FilieresToolStrip.Enabled = false;
             this.FilieresToolStrip.Name = "FilieresToolStrip";
-            this.FilieresToolStrip.Size = new System.Drawing.Size(170, 26);
+            this.FilieresToolStrip.Size = new System.Drawing.Size(224, 26);
             this.FilieresToolStrip.Text = "fillieres";
             // 
             // notationsToolStrip
@@ -242,15 +242,16 @@ namespace Gestion_inscription
             // 
             this.notesToolStrip.Enabled = false;
             this.notesToolStrip.Name = "notesToolStrip";
-            this.notesToolStrip.Size = new System.Drawing.Size(151, 26);
+            this.notesToolStrip.Size = new System.Drawing.Size(224, 26);
             this.notesToolStrip.Text = "Notes";
             // 
             // modulesToolStrip
             // 
             this.modulesToolStrip.Enabled = false;
             this.modulesToolStrip.Name = "modulesToolStrip";
-            this.modulesToolStrip.Size = new System.Drawing.Size(151, 26);
+            this.modulesToolStrip.Size = new System.Drawing.Size(224, 26);
             this.modulesToolStrip.Text = "Modules";
+            this.modulesToolStrip.Click += new System.EventHandler(this.modulesToolStrip_Click);
             // 
             // parametresToolStrip
             // 

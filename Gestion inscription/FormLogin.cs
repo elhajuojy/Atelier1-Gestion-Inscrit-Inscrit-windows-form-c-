@@ -131,5 +131,15 @@ namespace Gestion_inscription
         {
            
         }
+
+        private void textpass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

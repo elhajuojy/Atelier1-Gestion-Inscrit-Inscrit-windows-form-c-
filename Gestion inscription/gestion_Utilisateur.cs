@@ -200,7 +200,7 @@ namespace Gestion_inscription
             
            
 
-            cmd.CommandText = "select * from utilisateurs where login=@login and pw=@pw and nom=@nom and prenom=@prenom";
+            cmd.CommandText = "select * from utilisateurs where login=@login or pw=@pw or nom=@nom or prenom=@prenom";
             cmd.Connection = ctn;
 
             cmd.Parameters.AddWithValue("@login", txtlogin.Text);
@@ -247,6 +247,8 @@ namespace Gestion_inscription
                     radioOperat.Checked = true;
                 }
                 textloginProfile.Enabled = false;
+
+                btnAfficher_Click(sender,e);
 
             }
             else
@@ -388,9 +390,6 @@ namespace Gestion_inscription
             splitContainer1.Panel1Collapsed = true;
         }
 
-        private void btnclose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+
     }
 }
