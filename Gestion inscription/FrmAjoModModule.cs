@@ -26,6 +26,9 @@ namespace Gestion_inscription
         {
 
         }
+
+
+
         DataTable table;
         SqlDataAdapter da = new SqlDataAdapter();
         DataSet ds = new DataSet();
@@ -57,9 +60,11 @@ namespace Gestion_inscription
 
         private void btnValider_Click(object sender, EventArgs e)
         {
+
             SqlCommandBuilder bldr = new SqlCommandBuilder(da);
+            
             da.Update(table);
-            MessageBox.Show("les information est valider et enrgiter sur la base de donne","valider");
+            MessageBox.Show("les information est valider  sur la base de donne","valider");
 
         }
 
@@ -77,28 +82,97 @@ namespace Gestion_inscription
             da.Fill(ds, "modules");
             table = ds.Tables["modules"];
 
-
-
-            int counter = 0;
-            table.DefaultView.RowStateFilter = DataViewRowState.Deleted;
-            foreach (DataRowView ligne in table.DefaultView)
+            try
             {
-
-                counter += 1;
-                if (ligne[1].ToString() == textNomModule.Text)
+                int pos = -1;
+                for (int i = 0; i < table.Rows.Count; i++)
                 {
-                    
-                    //table.Rows[counter].remove();
+                    if (table.Rows[i][1].ToString() == textNomModule.Text)
+                    {
+                        pos = i;
+                        table.Rows[pos].Delete();
+                        MessageBox.Show("supprimer", table.Rows[pos][1].ToString());
+                        break;
+                    }
 
-                    MessageBox.Show("done");
                 }
-                
-                
-               
             }
+            catch (Exception ex )
+            {
+                MessageBox.Show(ex.ToString(),"expception");
+            }
+
             
-            // on annule le filtre
-            //table.DefaultView.RowFilter = "";
+
+         
+            
+          
+        }
+
+        
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+
+            table.DefaultView.RowStateFilter = DataViewRowState.OriginalRows;
+            // on affiche la version originale des lignes supprimees
+            table.DefaultView.RowStateFilter = DataViewRowState.Deleted;
+            MessageBox.Show("Annuler est bien effecte ");
+
+        }
+        int next = 0;
+        
+        
+        private void btnSuivant_Click(object sender, EventArgs e)
+        {
+            SqlConnection ctn = new SqlConnection(CnxString);
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = ctn;
+
+            cmd.CommandText = " select * from  modules ";
+            da.SelectCommand = cmd;
+
+            da.Fill(ds, "modules");
+            table = ds.Tables["modules"];
+            int index = table.DefaultView.Find(textNomModule.Text);
+            if (index > -1)
+            {
+                textNomModule.Text = table.Rows[index + 1][1].ToString();
+            }
+            else
+            {
+                textNomModule.Text = table.Rows[next][1].ToString();
+            }
+            next += 1;
+
+
+
+        }
+
+        private void FrmAjoModModule_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPre_Click(object sender, EventArgs e)
+        {
+            
+            SqlConnection ctn = new SqlConnection(CnxString);
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = ctn;
+
+            cmd.CommandText = " select * from  modules ";
+            da.SelectCommand = cmd;
+
+            da.Fill(ds, "modules");
+            table = ds.Tables["modules"];
+
+            textNomModule.Text = table.Rows[next][1].ToString();
+
+
+
+
         }
     }
 }

@@ -85,6 +85,7 @@ namespace Gestion_inscription
             this.btnAnnuler.TabIndex = 3;
             this.btnAnnuler.Text = "    Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnModifier
             // 
@@ -173,6 +174,7 @@ namespace Gestion_inscription
             this.btnPre.TabIndex = 8;
             this.btnPre.Text = "<<   Precedent";
             this.btnPre.UseVisualStyleBackColor = true;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
             // 
             // btnSuivant
             // 
@@ -183,6 +185,7 @@ namespace Gestion_inscription
             this.btnSuivant.TabIndex = 7;
             this.btnSuivant.Text = "Suivant    >>";
             this.btnSuivant.UseVisualStyleBackColor = true;
+            this.btnSuivant.Click += new System.EventHandler(this.btnSuivant_Click);
             // 
             // s
             // 
@@ -210,13 +213,14 @@ namespace Gestion_inscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 387);
+            this.ClientSize = new System.Drawing.Size(944, 396);
             this.Controls.Add(this.Nevgater);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAjoModModule";
             this.Text = "FrmAjoModModule";
+            this.Load += new System.EventHandler(this.FrmAjoModModule_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
