@@ -4,8 +4,7 @@ use inscrits
 
 create table utilisateurs(
     code_utilisateur int identity(1,1) not null,
-	login varchar(30)  ,
-	primary key (code_utilisateur,login),
+	login varchar(30) primary key  ,
 	pw varchar(30),
 	profile char(1),
 	nom varchar(30),
@@ -14,13 +13,19 @@ create table utilisateurs(
 	constraint chk_profile check(profile in ('a','o','u'))
 )
 
-select * from utilisateurs
 
 create table modules (
     code_module int identity not null primary key,
-    lib_module varchar(50)
+    lib_module varchar(50))
 
-)
+
+
+select * from modules
+DELETE FROM modules
+insert into modules values('');
+
+
+-- PROCEDURE sp_authentification
 
 CREATE PROCEDURE sp_authentification
 @login varchar(30),
@@ -31,6 +36,8 @@ WHERE login=@login AND pw=@pw
 GO
 
 sp_authentification'mehdi','elhjuojy'
+
+
 
 create table filieres (
     num_filiere int identity not null primary key,
@@ -49,7 +56,6 @@ references filieres(num_filiere))
 
 
 
-
 create table notes(
    code_module int not null,
    num_inscrit char(5) not null,
@@ -61,7 +67,7 @@ create table notes(
    references modules(code_module) ,
    constraint fk_notes_num_inscrit foreign key(num_inscrit)
    references inscrits(num_inscrit))
-
+ 
 
 
 
@@ -76,22 +82,25 @@ insert into utilisateurs values ('houssam123','jebaar','a','jebaar','houssam','A
 
 
 
-delete  from utilisateurs where code_utilisateur=9;
+DELETE FROM utilisateurs where login=''
+
+select * from utilisateurs order by code_utilisateur
 
 select * from utilisateurs where code_utilisateur=3037;
 
 UPDATE utilisateurs
-SET login = 'houssam', pw = '', profile='',nom='',prenom=''
-where code_utilisateur=3036
+SET login = '', pw = '', profile='',nom='',prenom=''
+where login='' and pw='' and nom='' and prenom=''
+
 
 select login , pw  from utilisateurs where login ='mehdi' and pw ='elhjuojy';
 
-
 select nom ,prenom ,login , fonction from utilisateurs where code_utilisateur =3;
 
-select * fro
+
 
 select login,pw,nom ,prenom from utilisateurs where login='' and pw=''and nom=''and prenom=''
 
 
-alter table utilisateurs add constraint PK_utilisateurs primary key(login,code_utilisateur);
+alter table utilisateurs add constraint PK_utilisateurs primary key(login,code_utilisateur);
+
