@@ -248,7 +248,7 @@ namespace Gestion_inscription
                 }
                 textloginProfile.Enabled = false;
 
-                btnAfficher_Click(sender,e);
+                //btnAfficher_Click(sender,e);
 
             }
             else

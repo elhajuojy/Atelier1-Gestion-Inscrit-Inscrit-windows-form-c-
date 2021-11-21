@@ -34,6 +34,7 @@ namespace Gestion_inscription
             this.Modification = new System.Windows.Forms.ToolStripButton();
             this.Suppression = new System.Windows.Forms.ToolStripButton();
             this.Recherche = new System.Windows.Forms.ToolStripButton();
+            this.btnclear = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnchercher = new System.Windows.Forms.Button();
@@ -62,7 +63,6 @@ namespace Gestion_inscription
             this.textloginProfile = new System.Windows.Forms.TextBox();
             this.labellogin = new System.Windows.Forms.Label();
             this.TreeView_utilisateurs = new System.Windows.Forms.TreeView();
-            this.btnclear = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -139,6 +139,18 @@ namespace Gestion_inscription
             this.Recherche.Size = new System.Drawing.Size(50, 57);
             this.Recherche.Text = " Recherche";
             this.Recherche.Click += new System.EventHandler(this.Recherche_Click);
+            // 
+            // btnclear
+            // 
+            this.btnclear.AutoSize = false;
+            this.btnclear.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnclear.Image = global::Gestion_inscription.Properties.Resources.btFermer32;
+            this.btnclear.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnclear.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnclear.Name = "btnclear";
+            this.btnclear.Size = new System.Drawing.Size(50, 57);
+            this.btnclear.Text = "clear ";
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // splitContainer1
             // 
@@ -435,18 +447,6 @@ namespace Gestion_inscription
             this.TreeView_utilisateurs.PathSeparator = "*";
             this.TreeView_utilisateurs.Size = new System.Drawing.Size(468, 465);
             this.TreeView_utilisateurs.TabIndex = 0;
-            // 
-            // btnclear
-            // 
-            this.btnclear.AutoSize = false;
-            this.btnclear.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnclear.Image = global::Gestion_inscription.Properties.Resources.btFermer32;
-            this.btnclear.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnclear.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnclear.Name = "btnclear";
-            this.btnclear.Size = new System.Drawing.Size(50, 57);
-            this.btnclear.Text = "clear ";
-            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // gestion_Utilisateur
             // 
