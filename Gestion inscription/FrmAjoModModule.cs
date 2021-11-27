@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Data.Common;
 
 namespace Gestion_inscription
 {
@@ -32,6 +33,8 @@ namespace Gestion_inscription
         DataTable table;
         SqlDataAdapter da = new SqlDataAdapter();
         DataSet ds = new DataSet();
+        BindingSource bds = new BindingSource();
+
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
@@ -71,16 +74,7 @@ namespace Gestion_inscription
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
 
-            SqlConnection ctn = new SqlConnection(CnxString);
-
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = ctn;
-
-            cmd.CommandText = " select * from  modules ";
-            da.SelectCommand = cmd;
-
-            da.Fill(ds, "modules");
-            table = ds.Tables["modules"];
+            
 
             try
             {
@@ -124,39 +118,24 @@ namespace Gestion_inscription
         
         private void btnSuivant_Click(object sender, EventArgs e)
         {
-            SqlConnection ctn = new SqlConnection(CnxString);
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = ctn;
+            //int index = table.DefaultView.Find(textNomModule.Text);
+            //if (index > -1)
+            //{
+            //    textNomModule.Text = table.Rows[index + 1][1].ToString();
+            //}
+            //else
+            //{
+            //    textNomModule.Text = table.Rows[next][1].ToString();
+            //}
+            //next += 1;
 
-            cmd.CommandText = " select * from  modules ";
-            da.SelectCommand = cmd;
-
-            da.Fill(ds, "modules");
-            table = ds.Tables["modules"];
-            int index = table.DefaultView.Find(textNomModule.Text);
-            if (index > -1)
-            {
-                textNomModule.Text = table.Rows[index + 1][1].ToString();
-            }
-            else
-            {
-                textNomModule.Text = table.Rows[next][1].ToString();
-            }
-            next += 1;
-
-
+            bds.MoveNext();
 
         }
 
         private void FrmAjoModModule_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnPre_Click(object sender, EventArgs e)
-        {
-            
             SqlConnection ctn = new SqlConnection(CnxString);
 
             SqlCommand cmd = new SqlCommand();
@@ -168,11 +147,31 @@ namespace Gestion_inscription
             da.Fill(ds, "modules");
             table = ds.Tables["modules"];
 
-            textNomModule.Text = table.Rows[next][1].ToString();
+
+            bds.DataSource = ds.Tables["modules"];
+            textNomModule.DataBindings.Add(new Binding("Text", bds, "lib_module"));
+        }
+
+        private void btnPre_Click(object sender, EventArgs e)
+        {
+
+
+            //textNomModule.Text = table.Rows[next][1].ToString();
+            bds.MovePrevious();
 
 
 
 
+        }
+
+        private void btnNouveau_Click(object sender, EventArgs e)
+        {
+            textNomModule.Text = string.Empty;
+        }
+
+        private void s_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

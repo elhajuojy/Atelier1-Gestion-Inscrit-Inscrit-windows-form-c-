@@ -198,6 +198,7 @@ namespace Gestion_inscription
             this.s.TabIndex = 5;
             this.s.Text = "    Fermer";
             this.s.UseVisualStyleBackColor = true;
+            this.s.Click += new System.EventHandler(this.s_Click);
             // 
             // btnNouveau
             // 
@@ -208,6 +209,7 @@ namespace Gestion_inscription
             this.btnNouveau.TabIndex = 6;
             this.btnNouveau.Text = "Nouveau";
             this.btnNouveau.UseVisualStyleBackColor = true;
+            this.btnNouveau.Click += new System.EventHandler(this.btnNouveau_Click);
             // 
             // FrmAjoModModule
             // 
