@@ -17,6 +17,7 @@ namespace Gestion_inscription
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GestionInscrit());
+                          //change the form to be start 
         }
     }
 }

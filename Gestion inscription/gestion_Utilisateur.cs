@@ -131,8 +131,6 @@ namespace Gestion_inscription
                 cmd.CommandText = "insert into utilisateurs values (@login,@pw,@profile,@nom,@prenom,@function);";
                 cmd.Connection = ctn;
 
-
-
                 
                 cmd.Parameters.AddWithValue("@login", textloginProfile.Text);
                 cmd.Parameters.AddWithValue("@pw", textMotePasseProfile.Text);
@@ -201,7 +199,7 @@ namespace Gestion_inscription
             
            
 
-            cmd.CommandText = "select * from utilisateurs where login=@login or pw=@pw or nom=@nom or prenom=@prenom";
+            cmd.CommandText = "select * from utilisateurs where login=@login and  pw=@pw or nom=@nom or prenom=@prenom";
             cmd.Connection = ctn;
 
             cmd.Parameters.AddWithValue("@login", txtlogin.Text);
@@ -252,7 +250,6 @@ namespace Gestion_inscription
                 //btnAfficher_Click(sender,e);
 
             }
-            else
             {
                 MessageBox.Show("no personne trouve ");
             }

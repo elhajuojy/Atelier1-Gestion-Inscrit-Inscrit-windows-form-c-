@@ -217,14 +217,14 @@ namespace Gestion_inscription
             // 
             this.inscrptionsToolStrip.Enabled = false;
             this.inscrptionsToolStrip.Name = "inscrptionsToolStrip";
-            this.inscrptionsToolStrip.Size = new System.Drawing.Size(224, 26);
+            this.inscrptionsToolStrip.Size = new System.Drawing.Size(170, 26);
             this.inscrptionsToolStrip.Text = "Inscriptions";
             // 
             // FilieresToolStrip
             // 
             this.FilieresToolStrip.Enabled = false;
             this.FilieresToolStrip.Name = "FilieresToolStrip";
-            this.FilieresToolStrip.Size = new System.Drawing.Size(224, 26);
+            this.FilieresToolStrip.Size = new System.Drawing.Size(170, 26);
             this.FilieresToolStrip.Text = "fillieres";
             // 
             // notationsToolStrip
@@ -244,6 +244,7 @@ namespace Gestion_inscription
             this.notesToolStrip.Name = "notesToolStrip";
             this.notesToolStrip.Size = new System.Drawing.Size(224, 26);
             this.notesToolStrip.Text = "Notes";
+            this.notesToolStrip.Click += new System.EventHandler(this.notesToolStrip_Click);
             // 
             // modulesToolStrip
             // 
@@ -277,7 +278,7 @@ namespace Gestion_inscription
             this.LabelForUpperName.BackColor = System.Drawing.Color.Transparent;
             this.LabelForUpperName.Location = new System.Drawing.Point(1198, 783);
             this.LabelForUpperName.Name = "LabelForUpperName";
-            this.LabelForUpperName.Size = new System.Drawing.Size(0, 17);
+            this.LabelForUpperName.Size = new System.Drawing.Size(0, 16);
             this.LabelForUpperName.TabIndex = 20;
             // 
             // GestionInscrit

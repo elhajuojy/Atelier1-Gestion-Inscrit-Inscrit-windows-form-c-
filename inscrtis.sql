@@ -21,7 +21,7 @@ create table modules (
 
 
 select * from modules
-DELETE FROM modules
+DELETE FROM modules 
 insert into modules values('');
 
 
@@ -42,6 +42,9 @@ sp_authentification'mehdi','elhjuojy'
 create table filieres (
     num_filiere int identity not null primary key,
     lib_filiere varchar(50))
+
+select * from filieres
+
 
 create table inscrits(
     num_inscrit char(5) not null primary key,

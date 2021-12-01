@@ -70,7 +70,7 @@ namespace Gestion_inscription
 
         private void TooStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-
+            notesToolStrip_Click(sender, e);
         }
 
         private void GestionInscrit_Load(object sender, EventArgs e)
@@ -108,6 +108,17 @@ namespace Gestion_inscription
             ModuleFrm.Show();
             // fill mdiParent with connexion form 
             ModuleFrm.Dock = DockStyle.Fill;
+            // mdi parent object
+            object_GestionIn = this;
+        }
+
+        private void notesToolStrip_Click(object sender, EventArgs e)
+        {
+            Gestion_des_Notes FrmNotes = new Gestion_des_Notes();
+            FrmNotes.MdiParent = this;
+            FrmNotes.Show();
+            // fill mdiParent with connexion form 
+            FrmNotes.Dock = DockStyle.Fill;
             // mdi parent object
             object_GestionIn = this;
         }

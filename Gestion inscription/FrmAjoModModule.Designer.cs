@@ -97,6 +97,7 @@ namespace Gestion_inscription
             this.btnModifier.TabIndex = 2;
             this.btnModifier.Text = "    Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnSupprimer
             // 

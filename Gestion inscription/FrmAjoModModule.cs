@@ -38,16 +38,9 @@ namespace Gestion_inscription
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            SqlConnection ctn = new SqlConnection(CnxString);
-
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = ctn;
             
-            cmd.CommandText = " select * from  modules ";
-            da.SelectCommand = cmd;
-            
-            da.Fill(ds, "modules");
-            table = ds.Tables["modules"];
+      
+           
             DataRow ligne = table.NewRow();
 
             ligne["lib_module"] = textNomModule.Text;
@@ -113,22 +106,21 @@ namespace Gestion_inscription
             MessageBox.Show("Annuler est bien effecte ");
 
         }
-        int next = 0;
-        
-        
+
+        int next;
         private void btnSuivant_Click(object sender, EventArgs e)
         {
 
-            //int index = table.DefaultView.Find(textNomModule.Text);
-            //if (index > -1)
-            //{
-            //    textNomModule.Text = table.Rows[index + 1][1].ToString();
-            //}
-            //else
-            //{
-            //    textNomModule.Text = table.Rows[next][1].ToString();
-            //}
-            //next += 1;
+            int index = table.DefaultView.Find(textNomModule.Text);
+            if (index > -1)
+            {
+                textNomModule.Text = table.Rows[index + 1][1].ToString();
+            }
+            else
+            {
+                textNomModule.Text = table.Rows[next][1].ToString();
+            }
+            next += 1;
 
             bds.MoveNext();
 
@@ -172,6 +164,19 @@ namespace Gestion_inscription
         private void s_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+
+            table.DefaultView.Sort = ("lib_module ASC");
+
+
+            int index;
+            index = table.DefaultView.Find(textNomModule.Text);
+
+            table.Rows[index][1] = textNomModule.Text;
+
         }
     }
 }
