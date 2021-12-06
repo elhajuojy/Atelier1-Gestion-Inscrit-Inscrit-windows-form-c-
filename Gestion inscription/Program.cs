@@ -16,7 +16,7 @@ namespace Gestion_inscription
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GestionInscrit());
+            Application.Run(new formateur());
                           //change the form to be start 
         }
     }

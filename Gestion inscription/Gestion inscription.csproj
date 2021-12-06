@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formateur.Designer.cs">
+      <DependentUpon>formateur.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,9 +83,18 @@
     <Compile Include="gestion_Utilisateur.Designer.cs">
       <DependentUpon>gestion_Utilisateur.cs</DependentUpon>
     </Compile>
+    <Compile Include="group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group.Designer.cs">
+      <DependentUpon>group.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formateur.resx">
+      <DependentUpon>formateur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gestion_Utilisateur.resx">
       <DependentUpon>gestion_Utilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group.resx">
+      <DependentUpon>group.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

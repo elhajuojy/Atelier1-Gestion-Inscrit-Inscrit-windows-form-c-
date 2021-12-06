@@ -13,3 +13,5 @@ C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion_inscription.g
 C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion_inscription.FrmAjoModModule.resources
 C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion inscription.csproj.SuggestedBindingRedirects.cache
 C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion_inscription.Gestion_des_Notes.resources
+C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion_inscription.group.resources
+C:\Users\pc\Desktop\Atelier1\Gestion inscription\obj\Debug\Gestion_inscription.formateur.resources

@@ -11,8 +11,8 @@ create table utilisateurs(
 	prenom varchar(30),
 	fonction varchar(30),
 	constraint chk_profile check(profile in ('a','o','u'))
-)
 
+)
 
 create table modules (
     code_module int identity not null primary key,
@@ -107,3 +107,16 @@ select login,pw,nom ,prenom from utilisateurs where login='' and pw=''and nom=''
 
 alter table utilisateurs add constraint PK_utilisateurs primary key(login,code_utilisateur);
 
+
+
+
+create table formateur(
+  matricule int identity(1,1) primary key ,
+  nom_formateur varchar(30) not null,
+  Prenom_formateur varchar(30) not null ,
+  Date_amnauche date not null
+
+)
+
+
+drop table formateur
